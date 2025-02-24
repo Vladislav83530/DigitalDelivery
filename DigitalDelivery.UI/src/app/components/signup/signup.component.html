@@ -7,33 +7,37 @@
                         <h3 class="pt-3 font-weight-bold">Sign up</h3>
                     </div>
                     <div class="panel-body p-3">
-                        <form>
+                        <form [formGroup]="signupForm">
                             <div class="form-group pt-3">
-                                <div class="input-field">
+                                <div class="input-field" [class.error]="showInputValidation('firstName')">
                                     <span class="fa fa-user p-2"></span>
-                                    <input type="text" placeholder="First name">
+                                    <input formControlName="firstName" type="text" placeholder="First name">
                                 </div>
                             </div>
+                            <small *ngIf="showInputValidation('firstName')" class="text-danger">*First name is required</small>
                             <div class="form-group pt-3">
-                                <div class="input-field">
+                                <div class="input-field" [class.error]="showInputValidation('lastName')">
                                     <span class="fa fa-user p-2"></span>
-                                    <input type="text" placeholder="Last name">
+                                    <input formControlName="lastName" type="text" placeholder="Last name">
                                 </div>
                             </div>
+                            <small *ngIf="showInputValidation('lastName')" class="text-danger">*Last name is required</small>
                             <div class="form-group pt-3">
-                                <div class="input-field">
+                                <div class="input-field" [class.error]="showInputValidation('email')">
                                     <span class="fa fa-user p-2"></span>
-                                    <input type="email" placeholder="Email">
+                                    <input formControlName="email" type="email" placeholder="Email">
                                 </div>
                             </div>
+                            <small *ngIf="showInputValidation('email')" class="text-danger">*Email is required</small>
                             <div class="form-group pt-3">
-                                <div class="input-field">
+                                <div class="input-field" [class.error]="showInputValidation('password')">
                                     <span class="fa fa-lock p-2"></span>
-                                    <input [type]="passwordInputType" placeholder="Password">
+                                    <input formControlName="password" [type]="passwordInputType" placeholder="Password">
                                     <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Sign up</button>
+                            <small *ngIf="showInputValidation('password')" class="text-danger">*Password is required</small>
+                            <button (click)="onSubmit()" type="submit" class="btn btn-primary btn-block mt-4 w-100">Sign up</button>
                             <div class="text-center pt-4 text-muted">
                                 Already have account?
                                 <a id="signup" href="/login">Login</a>
