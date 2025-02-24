@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: red !important;
+    border-color: red !important;
+}
