@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import ValidateForm from '../helpers/validate-form';
+import ValidateForm from '../../helpers/validate-form';
 import { NgIf } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -16,7 +18,11 @@ export class SignupComponent {
     isText: boolean = false;
     signupForm!: FormGroup;
     
-    constructor(private formBuider: FormBuilder) {
+    constructor(
+        private formBuider: FormBuilder,
+        private authService: AuthService,
+        private router: Router) 
+    {
         this.signupForm = this.formBuider.group({
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
@@ -31,15 +37,24 @@ export class SignupComponent {
         this.passwordInputType = this.isText ? 'text' : 'password';
     }
 
-    onSubmit() {
-            if (this.signupForm.valid) {
-    
-            }
-            else {
-                ValidateForm.validateAllFormsField(this.signupForm);
-                alert("Your form is invalid");
-            }
+    onSignup() {
+        if (this.signupForm.valid) {
+            this.authService.signUp(this.signupForm.value).subscribe({
+                next: () => {
+                    alert('Registration successful! 🎉');
+                    this.signupForm.reset();
+                    this.router.navigate(['login']);
+                },
+                error: () => {
+                    alert('Oops! Something went wrong. Please try again or contact support.');
+                }
+            })
         }
+        else {
+            ValidateForm.validateAllFormsField(this.signupForm);
+            alert('Please check your input and try again.');
+        }
+    }
     
     showInputValidation(fieldName: string) {
         return this.signupForm.controls[fieldName].dirty && this.signupForm.hasError('required', fieldName)

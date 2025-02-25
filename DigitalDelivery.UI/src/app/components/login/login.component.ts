@@ -1,7 +1,8 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormControl } from '@angular/forms';
-import ValidateForm from '../helpers/validate-form';
+import ValidateForm from '../../helpers/validate-form';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,10 @@ export class LoginComponent {
     isText: boolean = false;
     loginForm!: FormGroup;
 
-    constructor(private formBuider: FormBuilder) {
+    constructor(
+        private formBuider: FormBuilder,
+        private authService: AuthService) 
+    {
         this.loginForm = this.formBuider.group({
             email: ['', Validators.required],
             password: ['', Validators.required]
@@ -29,15 +33,23 @@ export class LoginComponent {
         this.passwordInputType = this.isText ? 'text' : 'password';
     }
 
-    onSubmit() {
+    onLogin() {
         if (this.loginForm.valid) {
-
+            this.authService.login(this.loginForm.value).subscribe({
+                next: (result) => {
+                    alert('Welcome back! 🎉 You have successfully logged in.');
+                },
+                error: (error) => {
+                    alert('Oops! Something went wrong. Please check your credentials and try again.');
+                }
+            })
         }
         else {
             ValidateForm.validateAllFormsField(this.loginForm);
-            alert("Your form is invalid");
+            alert("Please check your input and try again.");
         }
     }
+    
 
     showInputValidation(fieldName: string) {
         return this.loginForm.controls[fieldName].dirty && this.loginForm.hasError('required', fieldName)
