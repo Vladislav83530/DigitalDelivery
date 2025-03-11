@@ -1,15 +1,18 @@
 ﻿using DigitalDelivery.Application.Helper;
+using DigitalDelivery.Application.Models;
 using DigitalDelivery.Application.Models.User;
 using DigitalDelivery.Domain.Entities;
 using DigitalDelivery.Infrastructure.EF;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace DigitalDelivery.Application.Services
 {
     public interface IAuthService
     {
         Task<bool> LoginAsync(UserLogin user);
-        Task<bool> RegisterAsync(UserRegister user);
+        Task<Result> RegisterAsync(UserRegister user);
     }
 
     public class AuthSerivce : IAuthService
@@ -29,8 +32,24 @@ namespace DigitalDelivery.Application.Services
             return userEntity != null;
         }
 
-        public async Task<bool> RegisterAsync(UserRegister user)
+        public async Task<Result> RegisterAsync(UserRegister user)
         {
+            if (user == null)
+            {
+                return new Result(false, "User is required.");
+            }
+
+            if (await CheckEmailExistAsync(user.Email))
+            {
+                return new Result(false, "Email is already exists.");
+            }
+
+            var passwordValidation = CheckPasswordStrength(user.Password);
+            if (!string.IsNullOrEmpty(passwordValidation))
+            {
+                return new Result(false, passwordValidation);
+            }
+
             var userEntity = new User
             {
                 FirstName = user.FirstName,
@@ -43,7 +62,30 @@ namespace DigitalDelivery.Application.Services
             await _context.Users.AddAsync(userEntity);
             await _context.SaveChangesAsync();
 
-            return true;
+            return new Result(true);
+        }
+
+        private async Task<bool> CheckEmailExistAsync(string email)
+        {
+            return await _context.Users.AnyAsync(u => u.Email == email);
+        }
+
+        private string CheckPasswordStrength(string password)
+        {
+            var builder = new StringBuilder();
+            if (password.Length < 8)
+            {
+                builder.Append("Minimum password length should be 8" + Environment.NewLine);
+            }
+
+            if (!(Regex.IsMatch(password, "[a-z]")
+                && Regex.IsMatch(password, "[A-Z]")
+                && Regex.IsMatch(password, "[0-9]")))
+            {
+                builder.Append("Password should be Alphanumeric" + Environment.NewLine);
+            }
+
+            return builder.ToString();
         }
     }
 }

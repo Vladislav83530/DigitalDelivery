@@ -37,7 +37,7 @@ namespace DigitalDelivery.API.Controllers
 
             var result = await _authService.RegisterAsync(model);
 
-            return result ? Ok() : BadRequest();
+            return Ok(result);
         }
     }
 }

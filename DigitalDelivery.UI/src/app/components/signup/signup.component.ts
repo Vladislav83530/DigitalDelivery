@@ -40,10 +40,15 @@ export class SignupComponent {
     onSignup() {
         if (this.signupForm.valid) {
             this.authService.signUp(this.signupForm.value).subscribe({
-                next: () => {
-                    alert('Registration successful! 🎉');
-                    this.signupForm.reset();
-                    this.router.navigate(['login']);
+                next: (result) => {
+                    if (result.success) {
+                        alert('Registration successful! 🎉');
+                        this.signupForm.reset();
+                        this.router.navigate(['login']);
+                    }
+                    else {
+                        alert(result.message);
+                    }
                 },
                 error: () => {
                     alert('Oops! Something went wrong. Please try again or contact support.');
