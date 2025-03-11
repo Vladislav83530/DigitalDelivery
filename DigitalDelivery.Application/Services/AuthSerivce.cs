@@ -1,4 +1,5 @@
-﻿using DigitalDelivery.Application.Models.User;
+﻿using DigitalDelivery.Application.Helper;
+using DigitalDelivery.Application.Models.User;
 using DigitalDelivery.Domain.Entities;
 using DigitalDelivery.Infrastructure.EF;
 using Microsoft.EntityFrameworkCore;
@@ -35,7 +36,8 @@ namespace DigitalDelivery.Application.Services
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
-                Password = user.Password
+                Password = PasswordHasher.HashPassword(user.Password),
+                Token = string.Empty
             };
 
             await _context.Users.AddAsync(userEntity);
