@@ -16,7 +16,6 @@ export class UserProfileComponent implements OnInit {
 
     getAccount() {
         this.accountService.getAccount().subscribe((result: any)=> {
-            console.log(result.data)
         });
     }
 }

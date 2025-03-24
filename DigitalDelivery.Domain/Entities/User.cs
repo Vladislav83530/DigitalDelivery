@@ -24,5 +24,11 @@ namespace DigitalDelivery.Domain.Entities
 
         [Column("token")]
         public string Token { get; set; }
+
+        [Column("refreshtoken")]
+        public string RefreshToken { get; set; }
+
+        [Column("refreshtokenexpirytime")]
+        public DateTime RefreshTokenExpiryTime { get; set; }
     }
 }

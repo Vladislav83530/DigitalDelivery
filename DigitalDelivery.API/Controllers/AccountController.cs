@@ -9,7 +9,8 @@ namespace DigitalDelivery.API.Controllers
     {
         [HttpGet]
         public IActionResult Account()
-       {
+       
+        {
             return Ok(new Result<bool>(true, null, data: true));
         }
     }

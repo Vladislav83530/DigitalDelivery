@@ -39,5 +39,18 @@ namespace DigitalDelivery.API.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh(LoginResponse model)
+        {
+            if (model is null)
+            {
+                return BadRequest();
+            }
+
+            var result = await _authService.RefreshAsync(model);
+
+            return Ok(result);
+        }
     }
 }

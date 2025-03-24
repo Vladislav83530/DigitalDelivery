@@ -41,7 +41,8 @@ export class LoginComponent {
                 next: (result) => {
                     if (result.success) 
                     {
-                        this.authService.storeToken(result.data.token);
+                        this.authService.storeToken(result.data.accessToken);
+                        this.authService.storeRefreshToken(result.data.refreshToken);
                         this.toast.success('Welcome back! 🎉 You have successfully logged in.', 'Success', 5000);
                     }
                     else {

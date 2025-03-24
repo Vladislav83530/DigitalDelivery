@@ -4,11 +4,13 @@ using DigitalDelivery.Application.Models.User;
 using DigitalDelivery.Application.Settings;
 using DigitalDelivery.Domain.Entities;
 using DigitalDelivery.Infrastructure.EF;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -18,6 +20,7 @@ namespace DigitalDelivery.Application.Services
     {
         Task<Result<LoginResponse>> LoginAsync(UserLogin user);
         Task<Result<string>> RegisterAsync(UserRegister user);
+        Task<Result<LoginResponse>> RefreshAsync(LoginResponse loginResponse);
     }
 
     public class AuthSerivce : IAuthService
@@ -48,9 +51,15 @@ namespace DigitalDelivery.Application.Services
                 return new Result<LoginResponse>(false, "Password is incorrect");
             }
 
+            userEntity.Token = CreateJwt(userEntity);
+            userEntity.RefreshToken = CreateRefreshToken();
+            userEntity.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(5);
+            await _context.SaveChangesAsync();
+
             var response = new LoginResponse
             {
-                Token = CreateJwt(userEntity)
+                AccessToken = userEntity.Token,
+                RefreshToken = userEntity.RefreshToken
             };
 
             return new Result<LoginResponse>(true, null, data: response);
@@ -80,13 +89,42 @@ namespace DigitalDelivery.Application.Services
                 LastName = user.LastName,
                 Email = user.Email,
                 Password = PasswordHasher.HashPassword(user.Password),
-                Token = string.Empty
+                Token = string.Empty,
+                RefreshToken = string.Empty,
+                RefreshTokenExpiryTime = DateTime.MinValue
             };
 
             await _context.Users.AddAsync(userEntity);
             await _context.SaveChangesAsync();
 
             return new Result<string>(true);
+        }
+
+        public async Task<Result<LoginResponse>> RefreshAsync(LoginResponse model)
+        {
+            string accessToken = model.AccessToken;
+            string refreshToken = model.RefreshToken;
+
+            var principal = GetPrincipalFromExpiredToken(accessToken);
+            var email = principal.Identity.Name;
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+
+            if (user is null || user.RefreshToken != refreshToken || user.RefreshTokenExpiryTime <= DateTime.Now)
+            {
+                return new Result<LoginResponse>(false, "Invalid request");
+            }
+
+            var newAccessToken = CreateJwt(user);
+            var newRefreshToken = CreateRefreshToken();
+
+            user.RefreshToken = newRefreshToken;
+            await _context.SaveChangesAsync();
+
+            return new Result<LoginResponse>(true, null, new LoginResponse
+            {
+                AccessToken = newAccessToken,
+                RefreshToken = newRefreshToken,
+            });
         }
 
         private async Task<bool> CheckEmailExistAsync(string email)
@@ -118,7 +156,7 @@ namespace DigitalDelivery.Application.Services
             var key = Encoding.ASCII.GetBytes(_authSettings.SecretKey);
             var identity = new ClaimsIdentity(new Claim[]
             {
-                new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}")
+                new Claim(ClaimTypes.Name, $"{user.Email}")
             });
 
             var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
@@ -132,6 +170,46 @@ namespace DigitalDelivery.Application.Services
             var token = jwtTokenHandler.CreateToken(tokenDesciptor);
 
             return jwtTokenHandler.WriteToken(token);
+        }
+
+        private string CreateRefreshToken()
+        {
+            var tokenBytes = RandomNumberGenerator.GetBytes(64);
+            var refreshToken = Convert.ToBase64String(tokenBytes);
+
+            var tokenInUser = _context.Users
+                .Any(u => u.RefreshToken == refreshToken);
+
+            if (tokenInUser)
+            {
+                return CreateRefreshToken();
+            }
+
+            return refreshToken;
+        }
+
+        private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
+        {
+            var key = Encoding.ASCII.GetBytes(_authSettings.SecretKey);
+            var tokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateAudience = false,
+                ValidateIssuer = false,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateLifetime = false
+            };
+            var tokenHandler = new JwtSecurityTokenHandler();
+            SecurityToken securityToken;
+            var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out securityToken);
+            var jwtSecurityToken = securityToken as JwtSecurityToken;
+
+            if (jwtSecurityToken == null || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+            {
+                throw new SecurityTokenException("This is invalid token!");
+            }
+
+            return principal;
         }
     }
 }
