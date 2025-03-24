@@ -24,7 +24,7 @@ namespace DigitalDelivery.API.Controllers
 
             var result = await _authService.LoginAsync(model);
 
-            return result ? Ok() : NotFound();
+            return Ok(result);
         }
 
         [HttpPost("register")]

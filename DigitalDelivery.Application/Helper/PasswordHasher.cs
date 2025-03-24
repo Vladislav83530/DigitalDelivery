@@ -18,7 +18,7 @@ namespace DigitalDelivery.Application.Helper
 
             var hashBytes = new byte[SaltSize + HashSize];
             Array.Copy(salt, 0, hashBytes, 0, SaltSize);
-            Array.Copy(salt, 0, hashBytes, SaltSize, HashSize);
+            Array.Copy(hash, 0, hashBytes, SaltSize, HashSize);
 
             var base64Hash = Convert.ToBase64String(hashBytes);
             return base64Hash;

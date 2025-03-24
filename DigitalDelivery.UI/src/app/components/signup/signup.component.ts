@@ -4,11 +4,12 @@ import ValidateForm from '../../helpers/validate-form';
 import { NgIf } from '@angular/common';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { NgToastModule, NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [ReactiveFormsModule, NgIf],
+  imports: [ReactiveFormsModule, NgIf, NgToastModule],
   templateUrl: './signup.component.html',
   styleUrl: '../../../assets/css/common-auth.css'
 })
@@ -21,7 +22,8 @@ export class SignupComponent {
     constructor(
         private formBuider: FormBuilder,
         private authService: AuthService,
-        private router: Router) 
+        private router: Router,
+        private toast: NgToastService) 
     {
         this.signupForm = this.formBuider.group({
             firstName: ['', Validators.required],
@@ -42,22 +44,22 @@ export class SignupComponent {
             this.authService.signUp(this.signupForm.value).subscribe({
                 next: (result) => {
                     if (result.success) {
-                        alert('Registration successful! 🎉');
+                        this.toast.success('Registration successful! 🎉', 'Success', 5000);
                         this.signupForm.reset();
                         this.router.navigate(['login']);
                     }
                     else {
-                        alert(result.message);
+                        this.toast.danger(result.message, 'Error', 5000);
                     }
                 },
                 error: () => {
-                    alert('Oops! Something went wrong. Please try again or contact support.');
+                    this.toast.danger('Oops! Something went wrong. Please check your credentials and try again.', 'Error', 5000);
                 }
             })
         }
         else {
             ValidateForm.validateAllFormsField(this.signupForm);
-            alert('Please check your input and try again.');
+            this.toast.info('Please check your input and try again.', 'Info', 5000);
         }
     }
     
