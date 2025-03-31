@@ -30,5 +30,8 @@ namespace DigitalDelivery.Domain.Entities
 
         [Column("refreshtokenexpirytime")]
         public DateTime RefreshTokenExpiryTime { get; set; }
+
+        public ICollection<Order> SentOrders { get; set; }
+        public ICollection<Order> ReceivedOrders { get; set; }
     }
 }
