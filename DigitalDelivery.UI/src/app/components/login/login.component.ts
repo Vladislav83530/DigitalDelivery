@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import ValidateForm from '../../helpers/validate-form';
 import { AuthService } from '../../services/auth.service';
 import { NgToastModule, NgToastService } from 'ng-angular-popup';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -21,7 +22,8 @@ export class LoginComponent {
     constructor(
         private formBuider: FormBuilder,
         private authService: AuthService,
-        private toast: NgToastService) 
+        private toast: NgToastService,
+        private router: Router) 
     {
         this.loginForm = this.formBuider.group({
             email: ['', Validators.required],
@@ -43,6 +45,7 @@ export class LoginComponent {
                     {
                         this.authService.storeToken(result.data.accessToken);
                         this.authService.storeRefreshToken(result.data.refreshToken);
+                        this.router.navigate(['/'])
                         this.toast.success('Welcome back! 🎉 You have successfully logged in.', 'Success', 5000);
                     }
                     else {

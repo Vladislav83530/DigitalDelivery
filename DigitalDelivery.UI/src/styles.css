@@ -2,3 +2,15 @@
     background-color: red !important;
     border-color: red !important;
 }
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    font-family: sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
