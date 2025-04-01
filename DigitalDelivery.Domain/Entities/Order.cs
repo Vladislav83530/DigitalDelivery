@@ -41,6 +41,9 @@ namespace DigitalDelivery.Domain.Entities
         [Column("estimated_delivery")]
         public DateTime? EstimatedDelivery { get; set; }
 
+        [Column("cost")]
+        public double Cost { get; set; }
+
         public PackageDetails PackageDetails { get; set; }
     }
 }

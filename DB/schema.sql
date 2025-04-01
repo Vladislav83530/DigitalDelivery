@@ -3,6 +3,7 @@ CREATE TABLE users (
     firstname VARCHAR(255) NOT NULL,
     lastname VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
+    phonenumber VARCHAR(255) UNIQUE NOT NULL,
     password TEXT NOT NULL,
     token TEXT,
     refreshtoken TEXT,
@@ -29,6 +30,7 @@ CREATE TABLE orders (
     status_id INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     estimated_delivery TIMESTAMP,
+    cost DOUBLE PRECISION NOT NULL;
     FOREIGN KEY (sender_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (recipient_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (pickup_address_id) REFERENCES addresses(id) ON DELETE CASCADE,

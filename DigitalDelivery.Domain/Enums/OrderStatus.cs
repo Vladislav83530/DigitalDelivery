@@ -6,10 +6,6 @@
         InProgress,
         Shipped,
         Delivered,
-        Cancelled,
-        Returned,
-        OutForDelivery,
-        Failed,
-        Rescheduled
+        Cancelled
     }
 }

@@ -19,6 +19,9 @@ namespace DigitalDelivery.Domain.Entities
         [Column("email")]
         public string Email { get; set; }
 
+        [Column("phonenumber")]
+        public string PhoneNumber { get; set; }
+
         [Column("password")]
         public string Password { get; set; }
 

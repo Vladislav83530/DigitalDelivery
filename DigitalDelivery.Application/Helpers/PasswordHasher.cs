@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace DigitalDelivery.Application.Helper
+namespace DigitalDelivery.Application.Helpers
 {
     public class PasswordHasher
     {
