@@ -1,5 +1,5 @@
 CREATE TABLE users (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id INT PRIMARY KEY,
     firstname VARCHAR(255) NOT NULL,
     lastname VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
@@ -11,23 +11,23 @@ CREATE TABLE users (
 );
 
 CREATE TABLE addresses (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id SERIAL PRIMARY KEY,
     latitude DOUBLE PRECISION NOT NULL,
     longitude DOUBLE PRECISION NOT NULL
 );
 
 CREATE TABLE order_statuses (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id SERIAL PRIMARY KEY,
     status VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE orders (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    sender_id UUID NOT NULL,
-    recipient_id UUID NOT NULL,
-    pickup_address_id UUID NOT NULL,
-    delivery_address_id UUID NOT NULL,
-    status_id UUID NOT NULL,
+    sender_id INT NOT NULL,
+    recipient_id INT NOT NULL,
+    pickup_address_id INT NOT NULL,
+    delivery_address_id INT NOT NULL,
+    status_id INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     estimated_delivery TIMESTAMP,
     completed_at TIMESTAMP,
