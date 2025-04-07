@@ -2,9 +2,12 @@
 {
     public class MapSettings
     {
-        public double SwLatitude { get; set; }
-        public double SwLongitude { get; set; }
-        public double NeLatitude { get; set; }
-        public double NeLongitude { get; set; }
+        public List<GeoCoordinate> AreaPolygonCoordinates { get; set; }
+    }
+
+    public class GeoCoordinate
+    {
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
     }
 }

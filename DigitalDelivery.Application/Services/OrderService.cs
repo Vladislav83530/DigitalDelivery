@@ -1,4 +1,5 @@
-﻿using DigitalDelivery.Application.Models;
+﻿using DigitalDelivery.Application.Helpers;
+using DigitalDelivery.Application.Models;
 using DigitalDelivery.Application.Models.Order;
 using DigitalDelivery.Application.Settings;
 using DigitalDelivery.Domain.Entities;
@@ -73,12 +74,12 @@ namespace DigitalDelivery.Application.Services
                 return new Result<string>(false, $"The maximum allowed dimensions are {_packageRestrictionSettings.MaxWidthCm}x{_packageRestrictionSettings.MaxHeightCm}x{_packageRestrictionSettings.MaxDepthCm} cm.");
             }
 
-            if (!IsPointInArea(model.PickupAddress.Latitude, model.PickupAddress.Longitude))
+            if (!IsPointInConfiguredArea(model.PickupAddress.Latitude, model.PickupAddress.Longitude))
             {
                 return new Result<string>(false, "Pickup address is outside the allowed area.");
             }
 
-            if (!IsPointInArea(model.DeliveryAddress.Latitude, model.DeliveryAddress.Longitude))
+            if (!IsPointInConfiguredArea(model.DeliveryAddress.Latitude, model.DeliveryAddress.Longitude))
             {
                 return new Result<string>(false, "Delivery address is outside the allowed area.");
             }
@@ -86,12 +87,13 @@ namespace DigitalDelivery.Application.Services
             return new Result<string>(true);
         }
 
-        private bool IsPointInArea(double latitude, double longitude)
+        private bool IsPointInConfiguredArea(double latitude, double longitude)
         {
-            return latitude >= _mapSettings.SwLatitude &&
-                latitude <= _mapSettings.NeLatitude &&
-                longitude >= _mapSettings.SwLongitude &&
-                longitude <= _mapSettings.NeLongitude;
+            var polygon = _mapSettings.AreaPolygonCoordinates
+                .Select(coord => (Lat: coord.Latitude, Lon: coord.Longitude))
+                .ToList();
+
+            return Helper.IsPointInPolygon(latitude, longitude, polygon);
         }
 
         private Order CreateOrderEntity(User sender, User recipient, CreateOrderModel model)
