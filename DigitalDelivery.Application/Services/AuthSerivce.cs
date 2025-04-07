@@ -1,10 +1,9 @@
-﻿using DigitalDelivery.Application.Helper;
+﻿using DigitalDelivery.Application.Helpers;
 using DigitalDelivery.Application.Models;
 using DigitalDelivery.Application.Models.User;
 using DigitalDelivery.Application.Settings;
 using DigitalDelivery.Domain.Entities;
 using DigitalDelivery.Infrastructure.EF;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -72,9 +71,9 @@ namespace DigitalDelivery.Application.Services
                 return new Result<string>(false, "User is required.");
             }
 
-            if (await CheckEmailExistAsync(user.Email))
+            if (await CheckEmailOrPhoneExistAsync(user.Email, user.PhoneNumber))
             {
-                return new Result<string>(false, "Email is already exists.");
+                return new Result<string>(false, "Email or phone number is already exists.");
             }
 
             var passwordValidation = CheckPasswordStrength(user.Password);
@@ -88,6 +87,7 @@ namespace DigitalDelivery.Application.Services
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
+                PhoneNumber = Helper.CleanPhoneNumber(user.PhoneNumber),
                 Password = PasswordHasher.HashPassword(user.Password),
                 Token = string.Empty,
                 RefreshToken = string.Empty,
@@ -127,9 +127,10 @@ namespace DigitalDelivery.Application.Services
             });
         }
 
-        private async Task<bool> CheckEmailExistAsync(string email)
+        private async Task<bool> CheckEmailOrPhoneExistAsync(string email, string phoneNumber)
         {
-            return await _context.Users.AnyAsync(u => u.Email == email);
+            var clearPhoneNumber = Helper.CleanPhoneNumber(phoneNumber);
+            return await _context.Users.AnyAsync(u => u.Email == email || u.PhoneNumber == clearPhoneNumber);
         }
 
         private string CheckPasswordStrength(string password)
@@ -144,7 +145,7 @@ namespace DigitalDelivery.Application.Services
                 && Regex.IsMatch(password, "[A-Z]")
                 && Regex.IsMatch(password, "[0-9]")))
             {
-                builder.Append("Password should be Alphanumeric" + Environment.NewLine);
+                builder.Append("Password should be Alphanumeric");
             }
 
             return builder.ToString();
@@ -156,7 +157,8 @@ namespace DigitalDelivery.Application.Services
             var key = Encoding.ASCII.GetBytes(_authSettings.SecretKey);
             var identity = new ClaimsIdentity(new Claim[]
             {
-                new Claim(ClaimTypes.Name, $"{user.Email}")
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.MobilePhone, Helper.CleanPhoneNumber(user.PhoneNumber))
             });
 
             var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);

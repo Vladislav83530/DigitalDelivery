@@ -8,6 +8,8 @@ namespace DigitalDelivery.Application
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IAuthService, AuthSerivce>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }

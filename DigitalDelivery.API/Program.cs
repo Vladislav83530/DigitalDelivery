@@ -45,8 +45,12 @@ builder.Services.AddAuthentication(x =>
 
 builder.Configuration.AddUserSecrets<Program>();
 builder.Services.Configure<AuthSettings>(builder.Configuration.GetSection("AuthSettings"));
+builder.Services.Configure<PackageRestrictionSettings>(builder.Configuration.GetSection("PackagerestrictionSettings"));
+builder.Services.Configure<MapSettings>(builder.Configuration.GetSection("MapSettings"));
+builder.Services.Configure<BaseDeliverySettings>(builder.Configuration.GetSection("BaseDeliverySettings"));
 
 builder.Services.AddApplicationServices();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
