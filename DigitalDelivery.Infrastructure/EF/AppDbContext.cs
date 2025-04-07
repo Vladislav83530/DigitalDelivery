@@ -10,6 +10,10 @@ namespace DigitalDelivery.Infrastructure.EF
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderStatus> OrderStatuses { get; set; }
         public DbSet<PackageDetails> PackageDetails { get; set; }
+        public DbSet<Robot> Robots { get; set; }
+        public DbSet<RobotAssignment> RobotAssignments { get; set; }
+        public DbSet<RobotSpecification> RobotSpecifications { get; set; }
+        public DbSet<RobotTelemetry> RobotTelemetries { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -46,6 +50,26 @@ namespace DigitalDelivery.Infrastructure.EF
                 .HasOne(pd => pd.Order)
                 .WithOne(o => o.PackageDetails)
                 .HasForeignKey<PackageDetails>(pd => pd.OrderId);
+
+            modelBuilder.Entity<RobotAssignment>()
+                .HasOne(ra => ra.Robot)
+                .WithMany(r => r.Assignments)
+                .HasForeignKey(ra => ra.RobotId);
+
+            modelBuilder.Entity<RobotAssignment>()
+                .HasOne(ra => ra.Order)
+                .WithMany()
+                .HasForeignKey(ra => ra.OrderId);
+
+            modelBuilder.Entity<RobotSpecification>()
+                .HasOne(rs => rs.Robot)
+                .WithOne(r => r.Specification)
+                .HasForeignKey<RobotSpecification>(rs => rs.RobotId);
+
+            modelBuilder.Entity<RobotTelemetry>()
+                .HasOne(rt => rt.Robot)
+                .WithOne(r => r.Telemetry)
+                .HasForeignKey<RobotTelemetry>(rt => rt.RobotId);
         }
     }
 }

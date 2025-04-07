@@ -41,9 +41,14 @@ namespace DigitalDelivery.Domain.Entities
         [Column("estimated_delivery")]
         public DateTime? EstimatedDelivery { get; set; }
 
+        [Column("complete_at")]
+        public DateTime CompletedAt { get; set; }
+
         [Column("cost")]
         public double Cost { get; set; }
 
         public PackageDetails PackageDetails { get; set; }
+
+        public ICollection<RobotAssignment> RobotAssignments { get; set; }
     }
 }
