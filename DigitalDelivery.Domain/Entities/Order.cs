@@ -41,7 +41,7 @@ namespace DigitalDelivery.Domain.Entities
         [Column("estimated_delivery")]
         public DateTime? EstimatedDelivery { get; set; }
 
-        [Column("complete_at")]
+        [Column("completed_at")]
         public DateTime CompletedAt { get; set; }
 
         [Column("cost")]

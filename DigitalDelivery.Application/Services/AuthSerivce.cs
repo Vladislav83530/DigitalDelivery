@@ -1,4 +1,5 @@
 ﻿using DigitalDelivery.Application.Helpers;
+using DigitalDelivery.Application.Interfaces;
 using DigitalDelivery.Application.Models;
 using DigitalDelivery.Application.Models.User;
 using DigitalDelivery.Application.Settings;
@@ -15,13 +16,6 @@ using System.Text.RegularExpressions;
 
 namespace DigitalDelivery.Application.Services
 {
-    public interface IAuthService
-    {
-        Task<Result<LoginResponse>> LoginAsync(UserLogin user);
-        Task<Result<string>> RegisterAsync(UserRegister user);
-        Task<Result<LoginResponse>> RefreshAsync(LoginResponse loginResponse);
-    }
-
     public class AuthSerivce : IAuthService
     {
         private readonly AppDbContext _context;

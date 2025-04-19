@@ -1,13 +1,10 @@
-﻿namespace DigitalDelivery.Application.Settings
+﻿using DigitalDelivery.Application.Models.Map;
+
+namespace DigitalDelivery.Application.Settings
 {
     public class MapSettings
     {
         public List<GeoCoordinate> AreaPolygonCoordinates { get; set; }
-    }
-
-    public class GeoCoordinate
-    {
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+        public GeoCoordinate ChargingStation { get; set; }
     }
 }

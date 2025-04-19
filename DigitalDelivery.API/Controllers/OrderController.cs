@@ -1,5 +1,5 @@
-﻿using DigitalDelivery.Application.Models.Order;
-using DigitalDelivery.Application.Services;
+﻿using DigitalDelivery.Application.Interfaces;
+using DigitalDelivery.Application.Models.Order;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

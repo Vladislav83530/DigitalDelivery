@@ -1,9 +1,10 @@
 using DigitalDelivery.Application;
+using DigitalDelivery.Application.Services;
 using DigitalDelivery.Application.Settings;
 using DigitalDelivery.Infrastructure.EF;
+using DigitalDelivery.Infrastructure.Queues;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -48,6 +49,9 @@ builder.Services.Configure<AuthSettings>(builder.Configuration.GetSection("AuthS
 builder.Services.Configure<PackageRestrictionSettings>(builder.Configuration.GetSection("PackagerestrictionSettings"));
 builder.Services.Configure<MapSettings>(builder.Configuration.GetSection("MapSettings"));
 builder.Services.Configure<BaseDeliverySettings>(builder.Configuration.GetSection("BaseDeliverySettings"));
+
+builder.Services.AddSingleton<IOrderQueue, InMemoryOrderQueue>();
+builder.Services.AddHostedService<OrderProcessingService>();
 
 builder.Services.AddApplicationServices();
 builder.Services.AddHttpContextAccessor();
