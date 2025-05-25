@@ -6,6 +6,7 @@ import { Address } from '../../models/create-order/address.model';
 import { OrderService } from '../../services/order.service';
 import { NgToastService } from 'ng-angular-popup';
 import { Router } from '@angular/router';
+import { formatUAPhoneNumber } from '../../utils/phone-utils';
 
 @Component({
     selector: 'app-create-order',
@@ -41,23 +42,10 @@ export class CreateOrderComponent {
                (control.hasError('required') || control.hasError('min'));
     }
 
-    formatPhoneNumber(): void {
-        let value = this.createOrderForm.controls['phone'].value.replace(/\D/g, '');
-        
-        if (value.startsWith('380')) {
-            value = '+' + value;
-        } else if (value.startsWith('0')) {
-            value = '+380' + value.slice(1);
-        } else {
-            value = '+380';
-        }
-      
-        if (value.length > 4) value = value.slice(0, 4) + ' (' + value.slice(4);
-        if (value.length > 8) value = value.slice(0, 8) + ') ' + value.slice(8);
-        if (value.length > 13) value = value.slice(0, 13) + '-' + value.slice(13);
-        if (value.length > 16) value = value.slice(0, 16) + '-' + value.slice(16);
-      
-        this.createOrderForm.controls['phone'].setValue(value.slice(0, 19), { emitEvent: false });
+    onPhoneInput(): void {
+        const control = this.createOrderForm.controls['phone'];
+        const formatted = formatUAPhoneNumber(control.value);
+        control.setValue(formatted, { emitEvent: false });
     }
 
     onAddressesChange(addresses: any): void {
@@ -90,7 +78,7 @@ export class CreateOrderComponent {
                     if (response.success) {
                         this.toast.success('Order created successfully! 🎉', 'Success', 5000);
                         this.createOrderForm.reset();
-                        this.router.navigate(['/']);
+                        this.router.navigate(['/order', response.data]);
                     } else {
                         this.toast.danger(response.message || 'Failed to create order', 'Error', 5000);
                     }

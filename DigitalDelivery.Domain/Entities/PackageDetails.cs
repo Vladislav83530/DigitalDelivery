@@ -9,7 +9,7 @@ namespace DigitalDelivery.Domain.Entities
         [Key]
         [ForeignKey("Order")]
         [Column("order_id")]
-        public Guid OrderId { get; set; }
+        public int OrderId { get; set; }
         public Order Order { get; set; }
 
         [Column("weight_kg")]

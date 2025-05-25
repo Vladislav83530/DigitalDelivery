@@ -14,6 +14,10 @@ namespace DigitalDelivery.Infrastructure.EF
         public DbSet<RobotAssignment> RobotAssignments { get; set; }
         public DbSet<RobotSpecification> RobotSpecifications { get; set; }
         public DbSet<RobotTelemetry> RobotTelemetries { get; set; }
+        public DbSet<Node> Nodes { get; set; }
+        public DbSet<Edge> Edges { get; set; }
+        public DbSet<Route> Routes { get; set; }
+        public DbSet<RouteNode> RouteNodes { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -42,9 +46,9 @@ namespace DigitalDelivery.Infrastructure.EF
                 .HasForeignKey(o => o.DeliveryAddressId);
 
             modelBuilder.Entity<Order>()
-                .HasOne(o => o.Status)
-                .WithMany(s => s.Orders)
-                .HasForeignKey(o => o.StatusId);
+                .HasMany(o => o.OrderStatuses)
+                .WithOne(s => s.Order)
+                .HasForeignKey(o => o.OrderId);
 
             modelBuilder.Entity<PackageDetails>()
                 .HasOne(pd => pd.Order)
@@ -57,9 +61,9 @@ namespace DigitalDelivery.Infrastructure.EF
                 .HasForeignKey(ra => ra.RobotId);
 
             modelBuilder.Entity<RobotAssignment>()
-                .HasOne(ra => ra.Order)
-                .WithMany()
-                .HasForeignKey(ra => ra.OrderId);
+                .HasOne(pd => pd.Order)
+                .WithOne(o => o.RobotAssignments)
+                .HasForeignKey<RobotAssignment>(pd => pd.OrderId);
 
             modelBuilder.Entity<RobotSpecification>()
                 .HasOne(rs => rs.Robot)
@@ -70,6 +74,31 @@ namespace DigitalDelivery.Infrastructure.EF
                 .HasOne(rt => rt.Robot)
                 .WithOne(r => r.Telemetry)
                 .HasForeignKey<RobotTelemetry>(rt => rt.RobotId);
+
+            modelBuilder.Entity<Edge>()
+                .HasOne(e => e.FromNode)
+                .WithMany(n => n.OutgoingEdges)
+                .HasForeignKey(e => e.FromNodeId);
+
+            modelBuilder.Entity<Edge>()
+                .HasOne(e => e.ToNode)
+                .WithMany(n => n.IncomingEdges)
+                .HasForeignKey(e => e.ToNodeId);
+
+            modelBuilder.Entity<RouteNode>()
+                .HasOne(rn => rn.Node)
+                .WithMany(n => n.RouteNodes)
+                .HasForeignKey(rn => rn.NodeId);
+
+            modelBuilder.Entity<Route>()
+                .HasMany(r => r.RouteNodes)
+                .WithOne(rn => rn.Route)
+                .HasForeignKey(rn => rn.RouteId);
+
+            modelBuilder.Entity<Order>()
+                .HasMany(e => e.Routes)
+                .WithOne(r => r.Order)
+                .HasForeignKey(e => e.OrderId);
         }
     }
 }

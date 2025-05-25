@@ -1,18 +1,12 @@
-﻿using DigitalDelivery.Domain.Entities;
+﻿using DigitalDelivery.Application.Helpers;
+using DigitalDelivery.Application.Interfaces;
+using DigitalDelivery.Domain.Entities;
 using DigitalDelivery.Infrastructure.EF;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using DigitalDelivery.Application.Helpers;
 
 namespace DigitalDelivery.Application.Services
 {
-    public interface IUserService
-    {
-        User GetCurrentUser();
-        User GetUserByPhoneNumber(string phoneNumber);
-    }
-
     public class UserService : IUserService
     {
         private AppDbContext _context;
@@ -35,6 +29,16 @@ namespace DigitalDelivery.Application.Services
         {
             var clearPhoneNumber = Helper.CleanPhoneNumber(phoneNumber);
             return _context.Users.FirstOrDefault(u => u.PhoneNumber == clearPhoneNumber);
+        }
+
+        public User GetRandomUser()
+        {
+            var users = _context.Users.ToList();
+            if (!users.Any())
+                throw new InvalidOperationException("Користувачі не знайдені.");
+
+            int index = Random.Shared.Next(users.Count);
+            return users[index];
         }
     }
 }

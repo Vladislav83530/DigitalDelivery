@@ -1,5 +1,5 @@
-﻿using DigitalDelivery.Application.Models.User;
-using DigitalDelivery.Application.Services;
+﻿using DigitalDelivery.Application.Interfaces;
+using DigitalDelivery.Application.Models.User;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DigitalDelivery.API.Controllers

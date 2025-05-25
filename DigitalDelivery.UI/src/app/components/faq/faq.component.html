@@ -1,0 +1,71 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+            
+            <!-- Category Filter Buttons -->
+            <div class="category-filter mb-4">
+                <div class="btn-group" role="group">
+                    <button type="button" 
+                            class="btn" 
+                            [class.btn-primary]="selectedCategory === 'all'"
+                            [class.btn-outline-primary]="selectedCategory !== 'all'"
+                            (click)="selectCategory('all')">
+                        All
+                    </button>
+                    <button type="button" 
+                            class="btn" 
+                            [class.btn-primary]="selectedCategory === 'general'"
+                            [class.btn-outline-primary]="selectedCategory !== 'general'"
+                            (click)="selectCategory('general')">
+                        General
+                    </button>
+                    <button type="button" 
+                            class="btn" 
+                            [class.btn-primary]="selectedCategory === 'delivery'"
+                            [class.btn-outline-primary]="selectedCategory !== 'delivery'"
+                            (click)="selectCategory('delivery')">
+                        Delivery
+                    </button>
+                    <button type="button" 
+                            class="btn" 
+                            [class.btn-primary]="selectedCategory === 'payment'"
+                            [class.btn-outline-primary]="selectedCategory !== 'payment'"
+                            (click)="selectCategory('payment')">
+                        Payment
+                    </button>
+                    <button type="button" 
+                            class="btn" 
+                            [class.btn-primary]="selectedCategory === 'robot'"
+                            [class.btn-outline-primary]="selectedCategory !== 'robot'"
+                            (click)="selectCategory('robot')">
+                        Robot
+                    </button>
+                </div>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="faq-items">
+                <div *ngFor="let item of filteredFaqItems; let i = index" 
+                     class="faq-item mb-3">
+                    <div class="card">
+                        <div class="card-header" 
+                             role="button"
+                             (click)="toggleItem(i)"
+                             [class.active]="isExpanded(i)">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">{{ item.question }}</h5>
+                                <span class="toggle-icon">
+                                    <i class="fas" [class.fa-chevron-down]="!isExpanded(i)" [class.fa-chevron-up]="isExpanded(i)"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body" *ngIf="isExpanded(i)">
+                            <p class="mb-0">{{ item.answer }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

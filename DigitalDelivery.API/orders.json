@@ -1,0 +1,3844 @@
+[
+  {
+    "RecipientPhoneNumber": "380163385425",
+    "PickupAddress": {
+      "Latitude": 50.293992890514204,
+      "Longitude": 26.859418733689225
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29228886211013,
+      "Longitude": 26.85596368196195
+    },
+    "PackageDetails": {
+      "WeightKg": 6.01,
+      "WidthCm": 30,
+      "HeightCm": 14,
+      "DepthCm": 15
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380920717486",
+    "PickupAddress": {
+      "Latitude": 50.28721460887997,
+      "Longitude": 26.85639835482927
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29654215301841,
+      "Longitude": 26.859207120697878
+    },
+    "PackageDetails": {
+      "WeightKg": 4.17,
+      "WidthCm": 25,
+      "HeightCm": 29,
+      "DepthCm": 36
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380956787485",
+    "PickupAddress": {
+      "Latitude": 50.294150029860354,
+      "Longitude": 26.860973740435256
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29681058415507,
+      "Longitude": 26.862487341804528
+    },
+    "PackageDetails": {
+      "WeightKg": 1.36,
+      "WidthCm": 20,
+      "HeightCm": 31,
+      "DepthCm": 49
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380116368364",
+    "PickupAddress": {
+      "Latitude": 50.29689544801052,
+      "Longitude": 26.86786727263645
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29843735274975,
+      "Longitude": 26.86953570538488
+    },
+    "PackageDetails": {
+      "WeightKg": 9.85,
+      "WidthCm": 24,
+      "HeightCm": 11,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380953516860",
+    "PickupAddress": {
+      "Latitude": 50.29969316341327,
+      "Longitude": 26.858403208061496
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29252994314007,
+      "Longitude": 26.865466000171345
+    },
+    "PackageDetails": {
+      "WeightKg": 1.15,
+      "WidthCm": 15,
+      "HeightCm": 14,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380414294838",
+    "PickupAddress": {
+      "Latitude": 50.29278515950058,
+      "Longitude": 26.862911792777783
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2917610598779,
+      "Longitude": 26.867391215570468
+    },
+    "PackageDetails": {
+      "WeightKg": 5.66,
+      "WidthCm": 17,
+      "HeightCm": 32,
+      "DepthCm": 15
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380814039292",
+    "PickupAddress": {
+      "Latitude": 50.29693647476232,
+      "Longitude": 26.863818969070483
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29995074426935,
+      "Longitude": 26.85808090757158
+    },
+    "PackageDetails": {
+      "WeightKg": 1.26,
+      "WidthCm": 13,
+      "HeightCm": 25,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380562501515",
+    "PickupAddress": {
+      "Latitude": 50.29220423613391,
+      "Longitude": 26.86368560487377
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.290835978880644,
+      "Longitude": 26.86153903115621
+    },
+    "PackageDetails": {
+      "WeightKg": 7.31,
+      "WidthCm": 23,
+      "HeightCm": 21,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380528861571",
+    "PickupAddress": {
+      "Latitude": 50.28844777699892,
+      "Longitude": 26.846895197850365
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29317498406526,
+      "Longitude": 26.851025768461625
+    },
+    "PackageDetails": {
+      "WeightKg": 1.49,
+      "WidthCm": 38,
+      "HeightCm": 30,
+      "DepthCm": 21
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380848408602",
+    "PickupAddress": {
+      "Latitude": 50.292184547269535,
+      "Longitude": 26.848995615864776
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29165780907745,
+      "Longitude": 26.85067235974865
+    },
+    "PackageDetails": {
+      "WeightKg": 8.63,
+      "WidthCm": 39,
+      "HeightCm": 27,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380395901453",
+    "PickupAddress": {
+      "Latitude": 50.28917523765599,
+      "Longitude": 26.86428728437896
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29725350606934,
+      "Longitude": 26.86090297969276
+    },
+    "PackageDetails": {
+      "WeightKg": 4.95,
+      "WidthCm": 21,
+      "HeightCm": 11,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380452170068",
+    "PickupAddress": {
+      "Latitude": 50.29404467281111,
+      "Longitude": 26.871497698236663
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29185045364603,
+      "Longitude": 26.85221370916519
+    },
+    "PackageDetails": {
+      "WeightKg": 3.94,
+      "WidthCm": 36,
+      "HeightCm": 24,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380978803713",
+    "PickupAddress": {
+      "Latitude": 50.28838928211192,
+      "Longitude": 26.86027108376827
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29299769237964,
+      "Longitude": 26.85581772082334
+    },
+    "PackageDetails": {
+      "WeightKg": 8.45,
+      "WidthCm": 28,
+      "HeightCm": 36,
+      "DepthCm": 28
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380245864803",
+    "PickupAddress": {
+      "Latitude": 50.300441100844495,
+      "Longitude": 26.860333683229143
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29809557420144,
+      "Longitude": 26.87016394919246
+    },
+    "PackageDetails": {
+      "WeightKg": 2.17,
+      "WidthCm": 13,
+      "HeightCm": 34,
+      "DepthCm": 35
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380551363936",
+    "PickupAddress": {
+      "Latitude": 50.29809557420144,
+      "Longitude": 26.87016394919246
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29470731485729,
+      "Longitude": 26.870003166598917
+    },
+    "PackageDetails": {
+      "WeightKg": 5.96,
+      "WidthCm": 33,
+      "HeightCm": 38,
+      "DepthCm": 13
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380594855154",
+    "PickupAddress": {
+      "Latitude": 50.29556536943553,
+      "Longitude": 26.853435112257248
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.289950086752974,
+      "Longitude": 26.85035241025311
+    },
+    "PackageDetails": {
+      "WeightKg": 4.36,
+      "WidthCm": 28,
+      "HeightCm": 14,
+      "DepthCm": 10
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380232503559",
+    "PickupAddress": {
+      "Latitude": 50.29114814496319,
+      "Longitude": 26.850153808489477
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29001962823576,
+      "Longitude": 26.85765846488893
+    },
+    "PackageDetails": {
+      "WeightKg": 8.33,
+      "WidthCm": 24,
+      "HeightCm": 17,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380384252464",
+    "PickupAddress": {
+      "Latitude": 50.29382321087428,
+      "Longitude": 26.855654276036734
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.290742663079904,
+      "Longitude": 26.8435111379464
+    },
+    "PackageDetails": {
+      "WeightKg": 3.65,
+      "WidthCm": 31,
+      "HeightCm": 27,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380985138247",
+    "PickupAddress": {
+      "Latitude": 50.294482218031085,
+      "Longitude": 26.865264652143544
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29132718648746,
+      "Longitude": 26.85627380815739
+    },
+    "PackageDetails": {
+      "WeightKg": 3.78,
+      "WidthCm": 17,
+      "HeightCm": 28,
+      "DepthCm": 14
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380956704600",
+    "PickupAddress": {
+      "Latitude": 50.2923405738756,
+      "Longitude": 26.866807366315292
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29690517833252,
+      "Longitude": 26.86845425173151
+    },
+    "PackageDetails": {
+      "WeightKg": 5.54,
+      "WidthCm": 38,
+      "HeightCm": 32,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380889334481",
+    "PickupAddress": {
+      "Latitude": 50.29889804243316,
+      "Longitude": 26.85938508570882
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29001906538735,
+      "Longitude": 26.847078129558316
+    },
+    "PackageDetails": {
+      "WeightKg": 5.32,
+      "WidthCm": 12,
+      "HeightCm": 31,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380417233352",
+    "PickupAddress": {
+      "Latitude": 50.29667683708115,
+      "Longitude": 26.86010725186815
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28914251569278,
+      "Longitude": 26.86366842431555
+    },
+    "PackageDetails": {
+      "WeightKg": 5.15,
+      "WidthCm": 22,
+      "HeightCm": 24,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380933613519",
+    "PickupAddress": {
+      "Latitude": 50.286539490029064,
+      "Longitude": 26.855303065695722
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.289954069833094,
+      "Longitude": 26.85042774246385
+    },
+    "PackageDetails": {
+      "WeightKg": 2.88,
+      "WidthCm": 34,
+      "HeightCm": 36,
+      "DepthCm": 29
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380434771958",
+    "PickupAddress": {
+      "Latitude": 50.28661055935025,
+      "Longitude": 26.85357819675292
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.290223918441,
+      "Longitude": 26.84886105990531
+    },
+    "PackageDetails": {
+      "WeightKg": 3.09,
+      "WidthCm": 26,
+      "HeightCm": 25,
+      "DepthCm": 33
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380379303334",
+    "PickupAddress": {
+      "Latitude": 50.29041180895804,
+      "Longitude": 26.861516653548417
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29994844975101,
+      "Longitude": 26.85651469977743
+    },
+    "PackageDetails": {
+      "WeightKg": 1.21,
+      "WidthCm": 36,
+      "HeightCm": 29,
+      "DepthCm": 29
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380131867528",
+    "PickupAddress": {
+      "Latitude": 50.298126109005764,
+      "Longitude": 26.855065486006975
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.294359825076,
+      "Longitude": 26.866849360910216
+    },
+    "PackageDetails": {
+      "WeightKg": 7.15,
+      "WidthCm": 30,
+      "HeightCm": 38,
+      "DepthCm": 30
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380782488350",
+    "PickupAddress": {
+      "Latitude": 50.298126109005764,
+      "Longitude": 26.855065486006975
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.294359825076,
+      "Longitude": 26.866849360910216
+    },
+    "PackageDetails": {
+      "WeightKg": 3.02,
+      "WidthCm": 37,
+      "HeightCm": 21,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380456104219",
+    "PickupAddress": {
+      "Latitude": 50.29508785120758,
+      "Longitude": 26.850884421526008
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28869113682712,
+      "Longitude": 26.84765173629387
+    },
+    "PackageDetails": {
+      "WeightKg": 5.23,
+      "WidthCm": 11,
+      "HeightCm": 14,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380367576465",
+    "PickupAddress": {
+      "Latitude": 50.2895453737003,
+      "Longitude": 26.86324236326118
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287018638831896,
+      "Longitude": 26.852560280448944
+    },
+    "PackageDetails": {
+      "WeightKg": 6.34,
+      "WidthCm": 35,
+      "HeightCm": 33,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380390957409",
+    "PickupAddress": {
+      "Latitude": 50.29714352244533,
+      "Longitude": 26.875103102969245
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29672148618272,
+      "Longitude": 26.85194416523864
+    },
+    "PackageDetails": {
+      "WeightKg": 5.99,
+      "WidthCm": 31,
+      "HeightCm": 25,
+      "DepthCm": 33
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380661720681",
+    "PickupAddress": {
+      "Latitude": 50.29124328208797,
+      "Longitude": 26.85080494963477
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297350044469724,
+      "Longitude": 26.85598716042391
+    },
+    "PackageDetails": {
+      "WeightKg": 5.98,
+      "WidthCm": 13,
+      "HeightCm": 23,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380415208482",
+    "PickupAddress": {
+      "Latitude": 50.292772962785605,
+      "Longitude": 26.86911332806731
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.294235311552534,
+      "Longitude": 26.870491462977505
+    },
+    "PackageDetails": {
+      "WeightKg": 2.49,
+      "WidthCm": 36,
+      "HeightCm": 24,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380394786434",
+    "PickupAddress": {
+      "Latitude": 50.297527600859084,
+      "Longitude": 26.86259134542036
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.290645485817684,
+      "Longitude": 26.847008637632534
+    },
+    "PackageDetails": {
+      "WeightKg": 7.25,
+      "WidthCm": 18,
+      "HeightCm": 28,
+      "DepthCm": 35
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380383426809",
+    "PickupAddress": {
+      "Latitude": 50.295264056797755,
+      "Longitude": 26.87048655092481
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28714129343507,
+      "Longitude": 26.851854860703668
+    },
+    "PackageDetails": {
+      "WeightKg": 8.51,
+      "WidthCm": 25,
+      "HeightCm": 17,
+      "DepthCm": 25
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380522195465",
+    "PickupAddress": {
+      "Latitude": 50.294773159583826,
+      "Longitude": 26.85674902283489
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287352407274014,
+      "Longitude": 26.850235962143387
+    },
+    "PackageDetails": {
+      "WeightKg": 5.62,
+      "WidthCm": 31,
+      "HeightCm": 37,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380443774845",
+    "PickupAddress": {
+      "Latitude": 50.2936139161598,
+      "Longitude": 26.86592446196811
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28991972932173,
+      "Longitude": 26.84843134344734
+    },
+    "PackageDetails": {
+      "WeightKg": 5.55,
+      "WidthCm": 34,
+      "HeightCm": 25,
+      "DepthCm": 34
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380620906678",
+    "PickupAddress": {
+      "Latitude": 50.290534472528826,
+      "Longitude": 26.86608072880379
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28917119733812,
+      "Longitude": 26.842602027239057
+    },
+    "PackageDetails": {
+      "WeightKg": 3.9,
+      "WidthCm": 28,
+      "HeightCm": 19,
+      "DepthCm": 25
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380510019860",
+    "PickupAddress": {
+      "Latitude": 50.2878150238841,
+      "Longitude": 26.85142273268856
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29560939947215,
+      "Longitude": 26.865250381506204
+    },
+    "PackageDetails": {
+      "WeightKg": 2.36,
+      "WidthCm": 34,
+      "HeightCm": 15,
+      "DepthCm": 44
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380801171828",
+    "PickupAddress": {
+      "Latitude": 50.29101688825305,
+      "Longitude": 26.85031947111869
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293456298205925,
+      "Longitude": 26.856468231303403
+    },
+    "PackageDetails": {
+      "WeightKg": 5.24,
+      "WidthCm": 20,
+      "HeightCm": 29,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380970818648",
+    "PickupAddress": {
+      "Latitude": 50.2882066056328,
+      "Longitude": 26.855890421959216
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29720125048328,
+      "Longitude": 26.872392728650084
+    },
+    "PackageDetails": {
+      "WeightKg": 6.67,
+      "WidthCm": 37,
+      "HeightCm": 33,
+      "DepthCm": 34
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380516086886",
+    "PickupAddress": {
+      "Latitude": 50.29550709360398,
+      "Longitude": 26.859786527429435
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.288196520714386,
+      "Longitude": 26.857888951658502
+    },
+    "PackageDetails": {
+      "WeightKg": 4.3,
+      "WidthCm": 37,
+      "HeightCm": 11,
+      "DepthCm": 29
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380963476681",
+    "PickupAddress": {
+      "Latitude": 50.28972538683294,
+      "Longitude": 26.848634995294507
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29345901570979,
+      "Longitude": 26.864853345722096
+    },
+    "PackageDetails": {
+      "WeightKg": 2.48,
+      "WidthCm": 34,
+      "HeightCm": 32,
+      "DepthCm": 42
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380659854873",
+    "PickupAddress": {
+      "Latitude": 50.29238971901421,
+      "Longitude": 26.86504708493469
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.300484725212534,
+      "Longitude": 26.857199590730943
+    },
+    "PackageDetails": {
+      "WeightKg": 6.54,
+      "WidthCm": 25,
+      "HeightCm": 31,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380267361069",
+    "PickupAddress": {
+      "Latitude": 50.29344510489363,
+      "Longitude": 26.86700293457667
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28845106977377,
+      "Longitude": 26.853284853922666
+    },
+    "PackageDetails": {
+      "WeightKg": 7.97,
+      "WidthCm": 14,
+      "HeightCm": 25,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380782488350",
+    "PickupAddress": {
+      "Latitude": 50.29220008057232,
+      "Longitude": 26.860728214577982
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29621484225159,
+      "Longitude": 26.856918199978963
+    },
+    "PackageDetails": {
+      "WeightKg": 5.03,
+      "WidthCm": 31,
+      "HeightCm": 20,
+      "DepthCm": 43
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380769293395",
+    "PickupAddress": {
+      "Latitude": 50.291358464932244,
+      "Longitude": 26.854363945400255
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29847087844932,
+      "Longitude": 26.866593855529324
+    },
+    "PackageDetails": {
+      "WeightKg": 7.44,
+      "WidthCm": 36,
+      "HeightCm": 31,
+      "DepthCm": 37
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380848826450",
+    "PickupAddress": {
+      "Latitude": 50.29007567702766,
+      "Longitude": 26.859242572371137
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29565804463094,
+      "Longitude": 26.8657743380821
+    },
+    "PackageDetails": {
+      "WeightKg": 9.49,
+      "WidthCm": 39,
+      "HeightCm": 25,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380371373856",
+    "PickupAddress": {
+      "Latitude": 50.294005634108494,
+      "Longitude": 26.856872654017508
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29234898533484,
+      "Longitude": 26.845908566869138
+    },
+    "PackageDetails": {
+      "WeightKg": 5.4,
+      "WidthCm": 16,
+      "HeightCm": 34,
+      "DepthCm": 35
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380729241349",
+    "PickupAddress": {
+      "Latitude": 50.290162452418784,
+      "Longitude": 26.849704510139546
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29171122386738,
+      "Longitude": 26.846588837700715
+    },
+    "PackageDetails": {
+      "WeightKg": 5.65,
+      "WidthCm": 23,
+      "HeightCm": 20,
+      "DepthCm": 16
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380878907801",
+    "PickupAddress": {
+      "Latitude": 50.289441567488986,
+      "Longitude": 26.856977205203755
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29390442159522,
+      "Longitude": 26.861814478044174
+    },
+    "PackageDetails": {
+      "WeightKg": 7.41,
+      "WidthCm": 27,
+      "HeightCm": 20,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380873315271",
+    "PickupAddress": {
+      "Latitude": 50.28937545091294,
+      "Longitude": 26.849800534644153
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2983432761792,
+      "Longitude": 26.865501742434386
+    },
+    "PackageDetails": {
+      "WeightKg": 1.92,
+      "WidthCm": 26,
+      "HeightCm": 14,
+      "DepthCm": 36
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380826019317",
+    "PickupAddress": {
+      "Latitude": 50.30015146996973,
+      "Longitude": 26.858838350424723
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29636874116313,
+      "Longitude": 26.855347741295713
+    },
+    "PackageDetails": {
+      "WeightKg": 8.69,
+      "WidthCm": 14,
+      "HeightCm": 22,
+      "DepthCm": 47
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380246323646",
+    "PickupAddress": {
+      "Latitude": 50.29881896644112,
+      "Longitude": 26.856295134589455
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.299927300674455,
+      "Longitude": 26.856391678441383
+    },
+    "PackageDetails": {
+      "WeightKg": 9.88,
+      "WidthCm": 17,
+      "HeightCm": 35,
+      "DepthCm": 13
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380892763952",
+    "PickupAddress": {
+      "Latitude": 50.30002657452627,
+      "Longitude": 26.857169316495632
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297803626426635,
+      "Longitude": 26.853541142004122
+    },
+    "PackageDetails": {
+      "WeightKg": 1.65,
+      "WidthCm": 18,
+      "HeightCm": 25,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380477826051",
+    "PickupAddress": {
+      "Latitude": 50.29625697766569,
+      "Longitude": 26.86310428382822
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29171834922578,
+      "Longitude": 26.854548174606848
+    },
+    "PackageDetails": {
+      "WeightKg": 1.99,
+      "WidthCm": 11,
+      "HeightCm": 39,
+      "DepthCm": 22
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380133248008",
+    "PickupAddress": {
+      "Latitude": 50.29755509244686,
+      "Longitude": 26.86473356156169
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28982620878053,
+      "Longitude": 26.859018631002844
+    },
+    "PackageDetails": {
+      "WeightKg": 2.15,
+      "WidthCm": 23,
+      "HeightCm": 38,
+      "DepthCm": 13
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380148872151",
+    "PickupAddress": {
+      "Latitude": 50.292505871949515,
+      "Longitude": 26.85051448114262
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.30064615870557,
+      "Longitude": 26.85692877137942
+    },
+    "PackageDetails": {
+      "WeightKg": 9.65,
+      "WidthCm": 26,
+      "HeightCm": 34,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380786489988",
+    "PickupAddress": {
+      "Latitude": 50.2969081052571,
+      "Longitude": 26.85902425863992
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29711253183445,
+      "Longitude": 26.854130909005807
+    },
+    "PackageDetails": {
+      "WeightKg": 6.65,
+      "WidthCm": 25,
+      "HeightCm": 33,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380450980927",
+    "PickupAddress": {
+      "Latitude": 50.29929360158429,
+      "Longitude": 26.865954346893364
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.289351642336136,
+      "Longitude": 26.84186965039419
+    },
+    "PackageDetails": {
+      "WeightKg": 9.9,
+      "WidthCm": 28,
+      "HeightCm": 17,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380542795704",
+    "PickupAddress": {
+      "Latitude": 50.29130243002016,
+      "Longitude": 26.846643430508948
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28643095889096,
+      "Longitude": 26.851534679767607
+    },
+    "PackageDetails": {
+      "WeightKg": 4.47,
+      "WidthCm": 19,
+      "HeightCm": 12,
+      "DepthCm": 21
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380311111152",
+    "PickupAddress": {
+      "Latitude": 50.288796836412054,
+      "Longitude": 26.855113220793374
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29051729488169,
+      "Longitude": 26.863782704862004
+    },
+    "PackageDetails": {
+      "WeightKg": 9.09,
+      "WidthCm": 16,
+      "HeightCm": 36,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380949535319",
+    "PickupAddress": {
+      "Latitude": 50.29501297299701,
+      "Longitude": 26.864696373877962
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29391764086791,
+      "Longitude": 26.85201582257602
+    },
+    "PackageDetails": {
+      "WeightKg": 7.77,
+      "WidthCm": 35,
+      "HeightCm": 12,
+      "DepthCm": 28
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380295323284",
+    "PickupAddress": {
+      "Latitude": 50.29363668612104,
+      "Longitude": 26.85295529486617
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2925124369273,
+      "Longitude": 26.858249705367008
+    },
+    "PackageDetails": {
+      "WeightKg": 7.07,
+      "WidthCm": 37,
+      "HeightCm": 31,
+      "DepthCm": 13
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380290026859",
+    "PickupAddress": {
+      "Latitude": 50.28691935119934,
+      "Longitude": 26.854995770299876
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29468531576308,
+      "Longitude": 26.858588556082193
+    },
+    "PackageDetails": {
+      "WeightKg": 5.01,
+      "WidthCm": 28,
+      "HeightCm": 32,
+      "DepthCm": 44
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380635082830",
+    "PickupAddress": {
+      "Latitude": 50.29430886925833,
+      "Longitude": 26.855389301414966
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29076840145018,
+      "Longitude": 26.864853377432038
+    },
+    "PackageDetails": {
+      "WeightKg": 7.9,
+      "WidthCm": 30,
+      "HeightCm": 21,
+      "DepthCm": 28
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380336336702",
+    "PickupAddress": {
+      "Latitude": 50.29675340131991,
+      "Longitude": 26.858623107287173
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28922715641895,
+      "Longitude": 26.845270082269813
+    },
+    "PackageDetails": {
+      "WeightKg": 5.07,
+      "WidthCm": 19,
+      "HeightCm": 10,
+      "DepthCm": 15
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380739340140",
+    "PickupAddress": {
+      "Latitude": 50.294946396510966,
+      "Longitude": 26.848525477664847
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297408590097625,
+      "Longitude": 26.866322112385145
+    },
+    "PackageDetails": {
+      "WeightKg": 9.23,
+      "WidthCm": 38,
+      "HeightCm": 21,
+      "DepthCm": 29
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380522195465",
+    "PickupAddress": {
+      "Latitude": 50.29231846750066,
+      "Longitude": 26.845617578698942
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29804363614558,
+      "Longitude": 26.857162933159096
+    },
+    "PackageDetails": {
+      "WeightKg": 2.22,
+      "WidthCm": 11,
+      "HeightCm": 20,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380268284315",
+    "PickupAddress": {
+      "Latitude": 50.285774157723395,
+      "Longitude": 26.856266503059334
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.298630886937595,
+      "Longitude": 26.860984498915297
+    },
+    "PackageDetails": {
+      "WeightKg": 2.39,
+      "WidthCm": 25,
+      "HeightCm": 20,
+      "DepthCm": 36
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380741993144",
+    "PickupAddress": {
+      "Latitude": 50.29525456698584,
+      "Longitude": 26.866061530118245
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29787477005439,
+      "Longitude": 26.86306958073048
+    },
+    "PackageDetails": {
+      "WeightKg": 1.38,
+      "WidthCm": 23,
+      "HeightCm": 28,
+      "DepthCm": 47
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380763569221",
+    "PickupAddress": {
+      "Latitude": 50.287830576782106,
+      "Longitude": 26.855751956283658
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29300457157069,
+      "Longitude": 26.848597306334398
+    },
+    "PackageDetails": {
+      "WeightKg": 7.37,
+      "WidthCm": 15,
+      "HeightCm": 30,
+      "DepthCm": 47
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380206674421",
+    "PickupAddress": {
+      "Latitude": 50.29409533877042,
+      "Longitude": 26.867564163923845
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28801397001229,
+      "Longitude": 26.84901851468436
+    },
+    "PackageDetails": {
+      "WeightKg": 9.91,
+      "WidthCm": 28,
+      "HeightCm": 21,
+      "DepthCm": 23
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380939892892",
+    "PickupAddress": {
+      "Latitude": 50.29365255674694,
+      "Longitude": 26.85006622610849
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29041765698876,
+      "Longitude": 26.862405087420427
+    },
+    "PackageDetails": {
+      "WeightKg": 9.99,
+      "WidthCm": 19,
+      "HeightCm": 18,
+      "DepthCm": 28
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380171189338",
+    "PickupAddress": {
+      "Latitude": 50.29365255674694,
+      "Longitude": 26.85006622610849
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29041765698876,
+      "Longitude": 26.862405087420427
+    },
+    "PackageDetails": {
+      "WeightKg": 5.54,
+      "WidthCm": 37,
+      "HeightCm": 26,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380343906229",
+    "PickupAddress": {
+      "Latitude": 50.29119255851453,
+      "Longitude": 26.856615820952737
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.296330675507285,
+      "Longitude": 26.85085716267336
+    },
+    "PackageDetails": {
+      "WeightKg": 3.42,
+      "WidthCm": 16,
+      "HeightCm": 37,
+      "DepthCm": 16
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380331182733",
+    "PickupAddress": {
+      "Latitude": 50.28697351121119,
+      "Longitude": 26.853521390442783
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287343921484826,
+      "Longitude": 26.856112451247338
+    },
+    "PackageDetails": {
+      "WeightKg": 3.34,
+      "WidthCm": 16,
+      "HeightCm": 38,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380366430650",
+    "PickupAddress": {
+      "Latitude": 50.291934317124316,
+      "Longitude": 26.861135941522633
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.291277900289586,
+      "Longitude": 26.85894457255283
+    },
+    "PackageDetails": {
+      "WeightKg": 8.91,
+      "WidthCm": 39,
+      "HeightCm": 34,
+      "DepthCm": 34
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380362477423",
+    "PickupAddress": {
+      "Latitude": 50.29907821657211,
+      "Longitude": 26.85529746116499
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292882925036906,
+      "Longitude": 26.85742886539417
+    },
+    "PackageDetails": {
+      "WeightKg": 8.84,
+      "WidthCm": 37,
+      "HeightCm": 18,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380983301274",
+    "PickupAddress": {
+      "Latitude": 50.29648415108239,
+      "Longitude": 26.854070926984427
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29670007854275,
+      "Longitude": 26.857068921517815
+    },
+    "PackageDetails": {
+      "WeightKg": 1.44,
+      "WidthCm": 10,
+      "HeightCm": 15,
+      "DepthCm": 24
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380749523767",
+    "PickupAddress": {
+      "Latitude": 50.29849974466051,
+      "Longitude": 26.85283659916246
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28546197489142,
+      "Longitude": 26.85487642664396
+    },
+    "PackageDetails": {
+      "WeightKg": 9.77,
+      "WidthCm": 20,
+      "HeightCm": 19,
+      "DepthCm": 13
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380665064797",
+    "PickupAddress": {
+      "Latitude": 50.292751065729476,
+      "Longitude": 26.855690067604204
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29512418713449,
+      "Longitude": 26.852274403405932
+    },
+    "PackageDetails": {
+      "WeightKg": 6.53,
+      "WidthCm": 26,
+      "HeightCm": 37,
+      "DepthCm": 25
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380748692192",
+    "PickupAddress": {
+      "Latitude": 50.292983811969975,
+      "Longitude": 26.851316632956458
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29706161444263,
+      "Longitude": 26.87192757759731
+    },
+    "PackageDetails": {
+      "WeightKg": 5.47,
+      "WidthCm": 38,
+      "HeightCm": 13,
+      "DepthCm": 25
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380462846656",
+    "PickupAddress": {
+      "Latitude": 50.29380415667996,
+      "Longitude": 26.860596442878098
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29596218379721,
+      "Longitude": 26.86613402995426
+    },
+    "PackageDetails": {
+      "WeightKg": 9.74,
+      "WidthCm": 39,
+      "HeightCm": 36,
+      "DepthCm": 33
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380741465256",
+    "PickupAddress": {
+      "Latitude": 50.29943752786643,
+      "Longitude": 26.86441221216941
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29186544344507,
+      "Longitude": 26.8446356064032
+    },
+    "PackageDetails": {
+      "WeightKg": 3.37,
+      "WidthCm": 17,
+      "HeightCm": 32,
+      "DepthCm": 10
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380843866173",
+    "PickupAddress": {
+      "Latitude": 50.294309513009054,
+      "Longitude": 26.871860112264702
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28688200676691,
+      "Longitude": 26.852779601668235
+    },
+    "PackageDetails": {
+      "WeightKg": 9.07,
+      "WidthCm": 20,
+      "HeightCm": 19,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380166957638",
+    "PickupAddress": {
+      "Latitude": 50.298467098639485,
+      "Longitude": 26.853538180931302
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28834902092349,
+      "Longitude": 26.84756526151369
+    },
+    "PackageDetails": {
+      "WeightKg": 5.62,
+      "WidthCm": 11,
+      "HeightCm": 29,
+      "DepthCm": 47
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380363767618",
+    "PickupAddress": {
+      "Latitude": 50.29649711189573,
+      "Longitude": 26.850546027008413
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28646669709957,
+      "Longitude": 26.856079116799286
+    },
+    "PackageDetails": {
+      "WeightKg": 3.74,
+      "WidthCm": 25,
+      "HeightCm": 28,
+      "DepthCm": 24
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380777127446",
+    "PickupAddress": {
+      "Latitude": 50.29026029618968,
+      "Longitude": 26.84992613970849
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29557388599992,
+      "Longitude": 26.852112960257355
+    },
+    "PackageDetails": {
+      "WeightKg": 2.14,
+      "WidthCm": 18,
+      "HeightCm": 24,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380991618553",
+    "PickupAddress": {
+      "Latitude": 50.28913274457784,
+      "Longitude": 26.84919842853068
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29787529931294,
+      "Longitude": 26.8593397592052
+    },
+    "PackageDetails": {
+      "WeightKg": 6.69,
+      "WidthCm": 30,
+      "HeightCm": 27,
+      "DepthCm": 19
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380842711988",
+    "PickupAddress": {
+      "Latitude": 50.29478565966087,
+      "Longitude": 26.863031857244955
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29591564755177,
+      "Longitude": 26.866729934729033
+    },
+    "PackageDetails": {
+      "WeightKg": 2.32,
+      "WidthCm": 14,
+      "HeightCm": 38,
+      "DepthCm": 46
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380588832362",
+    "PickupAddress": {
+      "Latitude": 50.28967179776435,
+      "Longitude": 26.84187302167797
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292559855038384,
+      "Longitude": 26.855214428737234
+    },
+    "PackageDetails": {
+      "WeightKg": 7.3,
+      "WidthCm": 31,
+      "HeightCm": 33,
+      "DepthCm": 10
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380771557975",
+    "PickupAddress": {
+      "Latitude": 50.29005988787428,
+      "Longitude": 26.852988861226855
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29512381297681,
+      "Longitude": 26.849065807454554
+    },
+    "PackageDetails": {
+      "WeightKg": 3.24,
+      "WidthCm": 20,
+      "HeightCm": 36,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380281909873",
+    "PickupAddress": {
+      "Latitude": 50.28885426307256,
+      "Longitude": 26.856563682955695
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29863615321331,
+      "Longitude": 26.856562632525954
+    },
+    "PackageDetails": {
+      "WeightKg": 6.19,
+      "WidthCm": 11,
+      "HeightCm": 32,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380777190830",
+    "PickupAddress": {
+      "Latitude": 50.29227882005514,
+      "Longitude": 26.855722280351515
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29729398269435,
+      "Longitude": 26.85719103897086
+    },
+    "PackageDetails": {
+      "WeightKg": 7.1,
+      "WidthCm": 15,
+      "HeightCm": 19,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380725141423",
+    "PickupAddress": {
+      "Latitude": 50.29222467939609,
+      "Longitude": 26.85484601791297
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28655234251686,
+      "Longitude": 26.85430284118589
+    },
+    "PackageDetails": {
+      "WeightKg": 7.01,
+      "WidthCm": 39,
+      "HeightCm": 34,
+      "DepthCm": 22
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380976350389",
+    "PickupAddress": {
+      "Latitude": 50.29990802878675,
+      "Longitude": 26.857072496404207
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29959892049841,
+      "Longitude": 26.865112282575605
+    },
+    "PackageDetails": {
+      "WeightKg": 8.96,
+      "WidthCm": 25,
+      "HeightCm": 26,
+      "DepthCm": 39
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380664147073",
+    "PickupAddress": {
+      "Latitude": 50.289748920044836,
+      "Longitude": 26.85156469180779
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.290167630516876,
+      "Longitude": 26.852635694173443
+    },
+    "PackageDetails": {
+      "WeightKg": 1.2,
+      "WidthCm": 28,
+      "HeightCm": 13,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380635091408",
+    "PickupAddress": {
+      "Latitude": 50.29588195485092,
+      "Longitude": 26.869113500410183
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28985062951592,
+      "Longitude": 26.85685149148486
+    },
+    "PackageDetails": {
+      "WeightKg": 2.28,
+      "WidthCm": 28,
+      "HeightCm": 32,
+      "DepthCm": 49
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380758426874",
+    "PickupAddress": {
+      "Latitude": 50.28934904158846,
+      "Longitude": 26.858061301334402
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292898588508415,
+      "Longitude": 26.849071908837182
+    },
+    "PackageDetails": {
+      "WeightKg": 9.17,
+      "WidthCm": 28,
+      "HeightCm": 28,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380845825333",
+    "PickupAddress": {
+      "Latitude": 50.2911972068966,
+      "Longitude": 26.852308953371573
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292394355789526,
+      "Longitude": 26.863675688642996
+    },
+    "PackageDetails": {
+      "WeightKg": 9.04,
+      "WidthCm": 33,
+      "HeightCm": 38,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380196536693",
+    "PickupAddress": {
+      "Latitude": 50.29483777356852,
+      "Longitude": 26.864607629625247
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29895405500358,
+      "Longitude": 26.85884955514424
+    },
+    "PackageDetails": {
+      "WeightKg": 5.33,
+      "WidthCm": 26,
+      "HeightCm": 11,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380218157071",
+    "PickupAddress": {
+      "Latitude": 50.297259687073414,
+      "Longitude": 26.854349170013357
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29032986303075,
+      "Longitude": 26.846167395843924
+    },
+    "PackageDetails": {
+      "WeightKg": 6.29,
+      "WidthCm": 33,
+      "HeightCm": 26,
+      "DepthCm": 33
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380397272174",
+    "PickupAddress": {
+      "Latitude": 50.28897913629704,
+      "Longitude": 26.85543722382009
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29641197105123,
+      "Longitude": 26.87482353859681
+    },
+    "PackageDetails": {
+      "WeightKg": 3.61,
+      "WidthCm": 15,
+      "HeightCm": 21,
+      "DepthCm": 14
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380660659742",
+    "PickupAddress": {
+      "Latitude": 50.29585433602414,
+      "Longitude": 26.861379505519196
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29365808486521,
+      "Longitude": 26.84899511463743
+    },
+    "PackageDetails": {
+      "WeightKg": 3.5,
+      "WidthCm": 35,
+      "HeightCm": 31,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380808174225",
+    "PickupAddress": {
+      "Latitude": 50.28933718196083,
+      "Longitude": 26.856979387303735
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.299534060785994,
+      "Longitude": 26.86143286294947
+    },
+    "PackageDetails": {
+      "WeightKg": 1.73,
+      "WidthCm": 37,
+      "HeightCm": 32,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380661571659",
+    "PickupAddress": {
+      "Latitude": 50.29010614292948,
+      "Longitude": 26.852929462955064
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29194507628002,
+      "Longitude": 26.85301999412748
+    },
+    "PackageDetails": {
+      "WeightKg": 7.15,
+      "WidthCm": 37,
+      "HeightCm": 32,
+      "DepthCm": 49
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380500470174",
+    "PickupAddress": {
+      "Latitude": 50.290809631280716,
+      "Longitude": 26.848523184758452
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29316896278195,
+      "Longitude": 26.85019978498624
+    },
+    "PackageDetails": {
+      "WeightKg": 4.72,
+      "WidthCm": 23,
+      "HeightCm": 16,
+      "DepthCm": 33
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380197058333",
+    "PickupAddress": {
+      "Latitude": 50.29695226117622,
+      "Longitude": 26.865653358118166
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28576899981926,
+      "Longitude": 26.85830154611199
+    },
+    "PackageDetails": {
+      "WeightKg": 1.51,
+      "WidthCm": 19,
+      "HeightCm": 23,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380750464030",
+    "PickupAddress": {
+      "Latitude": 50.29831127522894,
+      "Longitude": 26.85463880783383
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29184907527643,
+      "Longitude": 26.849543439105748
+    },
+    "PackageDetails": {
+      "WeightKg": 4.69,
+      "WidthCm": 24,
+      "HeightCm": 14,
+      "DepthCm": 37
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380485892242",
+    "PickupAddress": {
+      "Latitude": 50.288267097319725,
+      "Longitude": 26.86217159659343
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29055093461042,
+      "Longitude": 26.8648773009818
+    },
+    "PackageDetails": {
+      "WeightKg": 5.16,
+      "WidthCm": 24,
+      "HeightCm": 32,
+      "DepthCm": 21
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380619036511",
+    "PickupAddress": {
+      "Latitude": 50.30133131580211,
+      "Longitude": 26.857427730474182
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.296381843108975,
+      "Longitude": 26.860506660288838
+    },
+    "PackageDetails": {
+      "WeightKg": 6.78,
+      "WidthCm": 18,
+      "HeightCm": 22,
+      "DepthCm": 43
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380969819057",
+    "PickupAddress": {
+      "Latitude": 50.29345190726333,
+      "Longitude": 26.85341160898537
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29736756115489,
+      "Longitude": 26.864053705986482
+    },
+    "PackageDetails": {
+      "WeightKg": 8.8,
+      "WidthCm": 34,
+      "HeightCm": 34,
+      "DepthCm": 35
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380522832590",
+    "PickupAddress": {
+      "Latitude": 50.29537888741957,
+      "Longitude": 26.858197056004776
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29419511228299,
+      "Longitude": 26.857341541980258
+    },
+    "PackageDetails": {
+      "WeightKg": 9.26,
+      "WidthCm": 12,
+      "HeightCm": 18,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380937323923",
+    "PickupAddress": {
+      "Latitude": 50.290685173839876,
+      "Longitude": 26.8663711781906
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29290602991837,
+      "Longitude": 26.865570457671613
+    },
+    "PackageDetails": {
+      "WeightKg": 7.94,
+      "WidthCm": 15,
+      "HeightCm": 23,
+      "DepthCm": 37
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380262157184",
+    "PickupAddress": {
+      "Latitude": 50.290464526742255,
+      "Longitude": 26.859510818725376
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29457357361716,
+      "Longitude": 26.857110685225692
+    },
+    "PackageDetails": {
+      "WeightKg": 8.16,
+      "WidthCm": 31,
+      "HeightCm": 24,
+      "DepthCm": 16
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380509802647",
+    "PickupAddress": {
+      "Latitude": 50.29346774217927,
+      "Longitude": 26.86297652431123
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29905026604777,
+      "Longitude": 26.859551028293247
+    },
+    "PackageDetails": {
+      "WeightKg": 3.83,
+      "WidthCm": 12,
+      "HeightCm": 22,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380667701627",
+    "PickupAddress": {
+      "Latitude": 50.29272229828519,
+      "Longitude": 26.855690458580124
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29212123901233,
+      "Longitude": 26.857904177501617
+    },
+    "PackageDetails": {
+      "WeightKg": 4.32,
+      "WidthCm": 23,
+      "HeightCm": 33,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380888159122",
+    "PickupAddress": {
+      "Latitude": 50.29393178962716,
+      "Longitude": 26.857405900438998
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.291349795888664,
+      "Longitude": 26.86474240040719
+    },
+    "PackageDetails": {
+      "WeightKg": 4.61,
+      "WidthCm": 34,
+      "HeightCm": 26,
+      "DepthCm": 37
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380116983323",
+    "PickupAddress": {
+      "Latitude": 50.292934352622154,
+      "Longitude": 26.853835114964383
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293193411269215,
+      "Longitude": 26.870210713944626
+    },
+    "PackageDetails": {
+      "WeightKg": 9.55,
+      "WidthCm": 20,
+      "HeightCm": 12,
+      "DepthCm": 15
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380300882222",
+    "PickupAddress": {
+      "Latitude": 50.28981421604415,
+      "Longitude": 26.859999198108813
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29416935298679,
+      "Longitude": 26.848656694143525
+    },
+    "PackageDetails": {
+      "WeightKg": 3.98,
+      "WidthCm": 29,
+      "HeightCm": 25,
+      "DepthCm": 42
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380886661544",
+    "PickupAddress": {
+      "Latitude": 50.29356569269757,
+      "Longitude": 26.86719593598196
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28924249629044,
+      "Longitude": 26.852823882477264
+    },
+    "PackageDetails": {
+      "WeightKg": 7.32,
+      "WidthCm": 22,
+      "HeightCm": 19,
+      "DepthCm": 46
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380386753335",
+    "PickupAddress": {
+      "Latitude": 50.2893999603788,
+      "Longitude": 26.85490484332818
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2866134530701,
+      "Longitude": 26.853624465024783
+    },
+    "PackageDetails": {
+      "WeightKg": 8.27,
+      "WidthCm": 15,
+      "HeightCm": 27,
+      "DepthCm": 16
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380534508909",
+    "PickupAddress": {
+      "Latitude": 50.29561482104572,
+      "Longitude": 26.86568104279198
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29771032624186,
+      "Longitude": 26.86616131929815
+    },
+    "PackageDetails": {
+      "WeightKg": 3.1,
+      "WidthCm": 11,
+      "HeightCm": 28,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380182846502",
+    "PickupAddress": {
+      "Latitude": 50.28825974593673,
+      "Longitude": 26.853691078127667
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29990327764399,
+      "Longitude": 26.861750736703925
+    },
+    "PackageDetails": {
+      "WeightKg": 7.82,
+      "WidthCm": 23,
+      "HeightCm": 26,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380253278374",
+    "PickupAddress": {
+      "Latitude": 50.291511314171274,
+      "Longitude": 26.855873148369717
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297729529021716,
+      "Longitude": 26.866502550147885
+    },
+    "PackageDetails": {
+      "WeightKg": 2.03,
+      "WidthCm": 10,
+      "HeightCm": 10,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380412382622",
+    "PickupAddress": {
+      "Latitude": 50.28716229447849,
+      "Longitude": 26.855933788352147
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.294215028692214,
+      "Longitude": 26.865526279567117
+    },
+    "PackageDetails": {
+      "WeightKg": 5.19,
+      "WidthCm": 29,
+      "HeightCm": 17,
+      "DepthCm": 48
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380328217129",
+    "PickupAddress": {
+      "Latitude": 50.292202568073186,
+      "Longitude": 26.862558328535204
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.296942418927856,
+      "Longitude": 26.854041461114164
+    },
+    "PackageDetails": {
+      "WeightKg": 10,
+      "WidthCm": 28,
+      "HeightCm": 32,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380553616224",
+    "PickupAddress": {
+      "Latitude": 50.293058259363946,
+      "Longitude": 26.85417603820764
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28897583349947,
+      "Longitude": 26.845699571779267
+    },
+    "PackageDetails": {
+      "WeightKg": 1.35,
+      "WidthCm": 35,
+      "HeightCm": 36,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380545732663",
+    "PickupAddress": {
+      "Latitude": 50.295257939787255,
+      "Longitude": 26.860039012188412
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28958277736406,
+      "Longitude": 26.847287276442188
+    },
+    "PackageDetails": {
+      "WeightKg": 1.26,
+      "WidthCm": 31,
+      "HeightCm": 23,
+      "DepthCm": 39
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380613895374",
+    "PickupAddress": {
+      "Latitude": 50.28900011303399,
+      "Longitude": 26.845611460482665
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29822566848558,
+      "Longitude": 26.853873788886432
+    },
+    "PackageDetails": {
+      "WeightKg": 7.19,
+      "WidthCm": 19,
+      "HeightCm": 39,
+      "DepthCm": 10
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380653771047",
+    "PickupAddress": {
+      "Latitude": 50.29715621976234,
+      "Longitude": 26.86630043108612
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293388419006384,
+      "Longitude": 26.85873907749786
+    },
+    "PackageDetails": {
+      "WeightKg": 8.12,
+      "WidthCm": 16,
+      "HeightCm": 31,
+      "DepthCm": 30
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380101981280",
+    "PickupAddress": {
+      "Latitude": 50.291981726804494,
+      "Longitude": 26.84831469992513
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29285866271567,
+      "Longitude": 26.848913300839953
+    },
+    "PackageDetails": {
+      "WeightKg": 6.65,
+      "WidthCm": 19,
+      "HeightCm": 33,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380709350894",
+    "PickupAddress": {
+      "Latitude": 50.29515377869901,
+      "Longitude": 26.860548878789157
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29267763812579,
+      "Longitude": 26.850297795533457
+    },
+    "PackageDetails": {
+      "WeightKg": 9.07,
+      "WidthCm": 35,
+      "HeightCm": 30,
+      "DepthCm": 46
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380123253926",
+    "PickupAddress": {
+      "Latitude": 50.28750666941751,
+      "Longitude": 26.856515212163146
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29705783868018,
+      "Longitude": 26.851696986214268
+    },
+    "PackageDetails": {
+      "WeightKg": 8.55,
+      "WidthCm": 23,
+      "HeightCm": 35,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380418274917",
+    "PickupAddress": {
+      "Latitude": 50.293579543547054,
+      "Longitude": 26.85818170906957
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29006377713604,
+      "Longitude": 26.85985302743946
+    },
+    "PackageDetails": {
+      "WeightKg": 7.66,
+      "WidthCm": 18,
+      "HeightCm": 20,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380151522223",
+    "PickupAddress": {
+      "Latitude": 50.294663334069874,
+      "Longitude": 26.852636313641245
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28889341155058,
+      "Longitude": 26.855234565380965
+    },
+    "PackageDetails": {
+      "WeightKg": 3.3,
+      "WidthCm": 20,
+      "HeightCm": 38,
+      "DepthCm": 48
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380829748847",
+    "PickupAddress": {
+      "Latitude": 50.29670465531002,
+      "Longitude": 26.854869846714923
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29164224914329,
+      "Longitude": 26.86579151646511
+    },
+    "PackageDetails": {
+      "WeightKg": 1.05,
+      "WidthCm": 19,
+      "HeightCm": 37,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380272930602",
+    "PickupAddress": {
+      "Latitude": 50.295997768984954,
+      "Longitude": 26.871699837039696
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.298019599263,
+      "Longitude": 26.854658202531823
+    },
+    "PackageDetails": {
+      "WeightKg": 1.38,
+      "WidthCm": 15,
+      "HeightCm": 18,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380325640614",
+    "PickupAddress": {
+      "Latitude": 50.29889270930934,
+      "Longitude": 26.854132913323557
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293082351948996,
+      "Longitude": 26.869058974370763
+    },
+    "PackageDetails": {
+      "WeightKg": 3.67,
+      "WidthCm": 17,
+      "HeightCm": 16,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380960860487",
+    "PickupAddress": {
+      "Latitude": 50.29383588749161,
+      "Longitude": 26.86876409526592
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29530104953134,
+      "Longitude": 26.85639979263756
+    },
+    "PackageDetails": {
+      "WeightKg": 2.78,
+      "WidthCm": 19,
+      "HeightCm": 19,
+      "DepthCm": 21
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380363535876",
+    "PickupAddress": {
+      "Latitude": 50.29530774589648,
+      "Longitude": 26.862790442262632
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.288871787069574,
+      "Longitude": 26.845478218367372
+    },
+    "PackageDetails": {
+      "WeightKg": 2.02,
+      "WidthCm": 21,
+      "HeightCm": 16,
+      "DepthCm": 36
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380877987553",
+    "PickupAddress": {
+      "Latitude": 50.29463407055141,
+      "Longitude": 26.860139364398716
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29111148092117,
+      "Longitude": 26.849497869822873
+    },
+    "PackageDetails": {
+      "WeightKg": 7.27,
+      "WidthCm": 28,
+      "HeightCm": 21,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380141723142",
+    "PickupAddress": {
+      "Latitude": 50.29712249103503,
+      "Longitude": 26.861215835926846
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.288399636725835,
+      "Longitude": 26.860445618968583
+    },
+    "PackageDetails": {
+      "WeightKg": 7.18,
+      "WidthCm": 19,
+      "HeightCm": 25,
+      "DepthCm": 49
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380639568558",
+    "PickupAddress": {
+      "Latitude": 50.2937717260507,
+      "Longitude": 26.84938989636355
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293090892744026,
+      "Longitude": 26.856731957713617
+    },
+    "PackageDetails": {
+      "WeightKg": 3.58,
+      "WidthCm": 17,
+      "HeightCm": 21,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380212036382",
+    "PickupAddress": {
+      "Latitude": 50.28661808014285,
+      "Longitude": 26.85620624994387
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28654108071266,
+      "Longitude": 26.8525378392933
+    },
+    "PackageDetails": {
+      "WeightKg": 8.92,
+      "WidthCm": 27,
+      "HeightCm": 23,
+      "DepthCm": 35
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380190527667",
+    "PickupAddress": {
+      "Latitude": 50.29974155580976,
+      "Longitude": 26.85411398564472
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.289099734318455,
+      "Longitude": 26.858948974976652
+    },
+    "PackageDetails": {
+      "WeightKg": 7.41,
+      "WidthCm": 38,
+      "HeightCm": 22,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380299242747",
+    "PickupAddress": {
+      "Latitude": 50.297885151330156,
+      "Longitude": 26.852369804712993
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29020035514898,
+      "Longitude": 26.865525266084138
+    },
+    "PackageDetails": {
+      "WeightKg": 6.91,
+      "WidthCm": 16,
+      "HeightCm": 17,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380759749746",
+    "PickupAddress": {
+      "Latitude": 50.29616375161547,
+      "Longitude": 26.87162376202447
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29732462909722,
+      "Longitude": 26.866946667636444
+    },
+    "PackageDetails": {
+      "WeightKg": 9.54,
+      "WidthCm": 14,
+      "HeightCm": 12,
+      "DepthCm": 23
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380397066490",
+    "PickupAddress": {
+      "Latitude": 50.29563068842813,
+      "Longitude": 26.86453247666435
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287044264683125,
+      "Longitude": 26.856701779804233
+    },
+    "PackageDetails": {
+      "WeightKg": 2.09,
+      "WidthCm": 38,
+      "HeightCm": 19,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380419713066",
+    "PickupAddress": {
+      "Latitude": 50.28817474843181,
+      "Longitude": 26.85495955752974
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29479367280584,
+      "Longitude": 26.870107729778187
+    },
+    "PackageDetails": {
+      "WeightKg": 9.28,
+      "WidthCm": 37,
+      "HeightCm": 35,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380595397790",
+    "PickupAddress": {
+      "Latitude": 50.29826750553673,
+      "Longitude": 26.852992641754955
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29738963669042,
+      "Longitude": 26.867288623438977
+    },
+    "PackageDetails": {
+      "WeightKg": 8.92,
+      "WidthCm": 26,
+      "HeightCm": 19,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380340102958",
+    "PickupAddress": {
+      "Latitude": 50.29312928979416,
+      "Longitude": 26.850930965356174
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29708200853518,
+      "Longitude": 26.858335567630906
+    },
+    "PackageDetails": {
+      "WeightKg": 3.47,
+      "WidthCm": 22,
+      "HeightCm": 13,
+      "DepthCm": 48
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380182028343",
+    "PickupAddress": {
+      "Latitude": 50.288817787109146,
+      "Longitude": 26.855976713359123
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.291418130587815,
+      "Longitude": 26.853896254248962
+    },
+    "PackageDetails": {
+      "WeightKg": 5.44,
+      "WidthCm": 11,
+      "HeightCm": 24,
+      "DepthCm": 42
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380859723302",
+    "PickupAddress": {
+      "Latitude": 50.29383691943397,
+      "Longitude": 26.864355757762908
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29671328440892,
+      "Longitude": 26.86892416899271
+    },
+    "PackageDetails": {
+      "WeightKg": 7.02,
+      "WidthCm": 21,
+      "HeightCm": 36,
+      "DepthCm": 29
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380778324030",
+    "PickupAddress": {
+      "Latitude": 50.28848546600471,
+      "Longitude": 26.846742403872643
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.3007666245508,
+      "Longitude": 26.8570156476974
+    },
+    "PackageDetails": {
+      "WeightKg": 8.58,
+      "WidthCm": 21,
+      "HeightCm": 12,
+      "DepthCm": 36
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380201190108",
+    "PickupAddress": {
+      "Latitude": 50.29903653135623,
+      "Longitude": 26.868136521073627
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287636773952094,
+      "Longitude": 26.854672993610823
+    },
+    "PackageDetails": {
+      "WeightKg": 6.93,
+      "WidthCm": 16,
+      "HeightCm": 25,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380973764690",
+    "PickupAddress": {
+      "Latitude": 50.29728573283553,
+      "Longitude": 26.872279297399704
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.300088210798975,
+      "Longitude": 26.8623254323519
+    },
+    "PackageDetails": {
+      "WeightKg": 7.23,
+      "WidthCm": 29,
+      "HeightCm": 11,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380722947373",
+    "PickupAddress": {
+      "Latitude": 50.3004439120299,
+      "Longitude": 26.860241062126217
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28841326061425,
+      "Longitude": 26.85214164352138
+    },
+    "PackageDetails": {
+      "WeightKg": 1.11,
+      "WidthCm": 12,
+      "HeightCm": 20,
+      "DepthCm": 10
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380703682976",
+    "PickupAddress": {
+      "Latitude": 50.29181971953354,
+      "Longitude": 26.864652504685502
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29390732581781,
+      "Longitude": 26.85829122649996
+    },
+    "PackageDetails": {
+      "WeightKg": 9.18,
+      "WidthCm": 17,
+      "HeightCm": 11,
+      "DepthCm": 16
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380134192061",
+    "PickupAddress": {
+      "Latitude": 50.289654646111295,
+      "Longitude": 26.851247687676167
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29329481906823,
+      "Longitude": 26.867868254395468
+    },
+    "PackageDetails": {
+      "WeightKg": 9.56,
+      "WidthCm": 30,
+      "HeightCm": 10,
+      "DepthCm": 24
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380484703187",
+    "PickupAddress": {
+      "Latitude": 50.29746473272281,
+      "Longitude": 26.86584098479939
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2880610906175,
+      "Longitude": 26.848207912284778
+    },
+    "PackageDetails": {
+      "WeightKg": 7.3,
+      "WidthCm": 10,
+      "HeightCm": 27,
+      "DepthCm": 48
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380643874855",
+    "PickupAddress": {
+      "Latitude": 50.289407637021604,
+      "Longitude": 26.850500169304024
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28838791374106,
+      "Longitude": 26.862535655612756
+    },
+    "PackageDetails": {
+      "WeightKg": 9.16,
+      "WidthCm": 33,
+      "HeightCm": 27,
+      "DepthCm": 21
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380934373805",
+    "PickupAddress": {
+      "Latitude": 50.28792525253824,
+      "Longitude": 26.86087703659888
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28998225265187,
+      "Longitude": 26.86255987591199
+    },
+    "PackageDetails": {
+      "WeightKg": 1.6,
+      "WidthCm": 14,
+      "HeightCm": 28,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380975742113",
+    "PickupAddress": {
+      "Latitude": 50.29082475492425,
+      "Longitude": 26.85228054670754
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29211996904006,
+      "Longitude": 26.858209117882105
+    },
+    "PackageDetails": {
+      "WeightKg": 1.88,
+      "WidthCm": 12,
+      "HeightCm": 11,
+      "DepthCm": 19
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380399093210",
+    "PickupAddress": {
+      "Latitude": 50.294584135709655,
+      "Longitude": 26.870472190967032
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28650285816183,
+      "Longitude": 26.85749937393291
+    },
+    "PackageDetails": {
+      "WeightKg": 9.13,
+      "WidthCm": 19,
+      "HeightCm": 31,
+      "DepthCm": 23
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380388725996",
+    "PickupAddress": {
+      "Latitude": 50.29990392847187,
+      "Longitude": 26.86380151020785
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.288938868908005,
+      "Longitude": 26.85850908125251
+    },
+    "PackageDetails": {
+      "WeightKg": 2.8,
+      "WidthCm": 37,
+      "HeightCm": 15,
+      "DepthCm": 48
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380646630240",
+    "PickupAddress": {
+      "Latitude": 50.29298904542996,
+      "Longitude": 26.850813426231976
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297207727456225,
+      "Longitude": 26.864807345453652
+    },
+    "PackageDetails": {
+      "WeightKg": 5.65,
+      "WidthCm": 18,
+      "HeightCm": 23,
+      "DepthCm": 34
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380597669874",
+    "PickupAddress": {
+      "Latitude": 50.29758573042204,
+      "Longitude": 26.861584955532194
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2919008603218,
+      "Longitude": 26.85367302801167
+    },
+    "PackageDetails": {
+      "WeightKg": 5.88,
+      "WidthCm": 17,
+      "HeightCm": 21,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380274085691",
+    "PickupAddress": {
+      "Latitude": 50.29558603269882,
+      "Longitude": 26.858682389287075
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29905858486115,
+      "Longitude": 26.86330842540943
+    },
+    "PackageDetails": {
+      "WeightKg": 5.7,
+      "WidthCm": 16,
+      "HeightCm": 30,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380234195596",
+    "PickupAddress": {
+      "Latitude": 50.29454081482986,
+      "Longitude": 26.868723450247078
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293762780576664,
+      "Longitude": 26.853000268490884
+    },
+    "PackageDetails": {
+      "WeightKg": 5.01,
+      "WidthCm": 35,
+      "HeightCm": 29,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380560768854",
+    "PickupAddress": {
+      "Latitude": 50.29272488060844,
+      "Longitude": 26.849952670345164
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297084840109925,
+      "Longitude": 26.86047641623397
+    },
+    "PackageDetails": {
+      "WeightKg": 3.92,
+      "WidthCm": 34,
+      "HeightCm": 32,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380443490101",
+    "PickupAddress": {
+      "Latitude": 50.292030867177466,
+      "Longitude": 26.85695029642365
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28923448784637,
+      "Longitude": 26.86157544515745
+    },
+    "PackageDetails": {
+      "WeightKg": 1.93,
+      "WidthCm": 38,
+      "HeightCm": 37,
+      "DepthCm": 33
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380225939622",
+    "PickupAddress": {
+      "Latitude": 50.28697685263101,
+      "Longitude": 26.85125782832017
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29166727250245,
+      "Longitude": 26.846117312417473
+    },
+    "PackageDetails": {
+      "WeightKg": 5.21,
+      "WidthCm": 17,
+      "HeightCm": 27,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380581559435",
+    "PickupAddress": {
+      "Latitude": 50.295309542119234,
+      "Longitude": 26.860394078316467
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29842823965027,
+      "Longitude": 26.869364347322577
+    },
+    "PackageDetails": {
+      "WeightKg": 8.09,
+      "WidthCm": 18,
+      "HeightCm": 21,
+      "DepthCm": 36
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380732962274",
+    "PickupAddress": {
+      "Latitude": 50.29160389131349,
+      "Longitude": 26.84472126956096
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.291476922383644,
+      "Longitude": 26.866894483545664
+    },
+    "PackageDetails": {
+      "WeightKg": 9.72,
+      "WidthCm": 24,
+      "HeightCm": 16,
+      "DepthCm": 41
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380506669540",
+    "PickupAddress": {
+      "Latitude": 50.29030826066594,
+      "Longitude": 26.84339186410736
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29794396861507,
+      "Longitude": 26.855281776379165
+    },
+    "PackageDetails": {
+      "WeightKg": 7.01,
+      "WidthCm": 35,
+      "HeightCm": 17,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380464247513",
+    "PickupAddress": {
+      "Latitude": 50.295574803574574,
+      "Longitude": 26.873797945879097
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29835536840278,
+      "Longitude": 26.858137095079226
+    },
+    "PackageDetails": {
+      "WeightKg": 7.22,
+      "WidthCm": 17,
+      "HeightCm": 20,
+      "DepthCm": 42
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380293044047",
+    "PickupAddress": {
+      "Latitude": 50.293681615984305,
+      "Longitude": 26.867333078616404
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.298293776040566,
+      "Longitude": 26.85998974582629
+    },
+    "PackageDetails": {
+      "WeightKg": 2.31,
+      "WidthCm": 19,
+      "HeightCm": 38,
+      "DepthCm": 17
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380443972791",
+    "PickupAddress": {
+      "Latitude": 50.30010556310575,
+      "Longitude": 26.862389322961146
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.293844049339555,
+      "Longitude": 26.861986771794278
+    },
+    "PackageDetails": {
+      "WeightKg": 4.05,
+      "WidthCm": 18,
+      "HeightCm": 20,
+      "DepthCm": 28
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380980969499",
+    "PickupAddress": {
+      "Latitude": 50.29366387307225,
+      "Longitude": 26.869574659883867
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2910582474225,
+      "Longitude": 26.849435482023313
+    },
+    "PackageDetails": {
+      "WeightKg": 9.25,
+      "WidthCm": 39,
+      "HeightCm": 37,
+      "DepthCm": 44
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380393602961",
+    "PickupAddress": {
+      "Latitude": 50.28852511424774,
+      "Longitude": 26.847660363475946
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29778939831374,
+      "Longitude": 26.859178917110498
+    },
+    "PackageDetails": {
+      "WeightKg": 1.13,
+      "WidthCm": 38,
+      "HeightCm": 27,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380450750375",
+    "PickupAddress": {
+      "Latitude": 50.29967836844613,
+      "Longitude": 26.85968277380622
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29146390709851,
+      "Longitude": 26.86565556605018
+    },
+    "PackageDetails": {
+      "WeightKg": 4.82,
+      "WidthCm": 27,
+      "HeightCm": 38,
+      "DepthCm": 12
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380334792131",
+    "PickupAddress": {
+      "Latitude": 50.29296109345022,
+      "Longitude": 26.854945852863406
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.295213812511044,
+      "Longitude": 26.858683067307084
+    },
+    "PackageDetails": {
+      "WeightKg": 8.45,
+      "WidthCm": 20,
+      "HeightCm": 24,
+      "DepthCm": 47
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380513851975",
+    "PickupAddress": {
+      "Latitude": 50.28983394706654,
+      "Longitude": 26.856794074879012
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.295067696914934,
+      "Longitude": 26.84819499540697
+    },
+    "PackageDetails": {
+      "WeightKg": 9.52,
+      "WidthCm": 35,
+      "HeightCm": 39,
+      "DepthCm": 49
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380443774845",
+    "PickupAddress": {
+      "Latitude": 50.29280254853189,
+      "Longitude": 26.856531957085238
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29885615785077,
+      "Longitude": 26.86267388627875
+    },
+    "PackageDetails": {
+      "WeightKg": 7.47,
+      "WidthCm": 34,
+      "HeightCm": 15,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380778752418",
+    "PickupAddress": {
+      "Latitude": 50.29076254425946,
+      "Longitude": 26.853766346992586
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29436230146965,
+      "Longitude": 26.85013625008903
+    },
+    "PackageDetails": {
+      "WeightKg": 9,
+      "WidthCm": 28,
+      "HeightCm": 19,
+      "DepthCm": 24
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380950656726",
+    "PickupAddress": {
+      "Latitude": 50.29641032581068,
+      "Longitude": 26.85597604809967
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29131465349538,
+      "Longitude": 26.864933686910877
+    },
+    "PackageDetails": {
+      "WeightKg": 7.46,
+      "WidthCm": 26,
+      "HeightCm": 20,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380873815114",
+    "PickupAddress": {
+      "Latitude": 50.29922029704581,
+      "Longitude": 26.85700190274378
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29529207617769,
+      "Longitude": 26.85580942428151
+    },
+    "PackageDetails": {
+      "WeightKg": 4.1,
+      "WidthCm": 22,
+      "HeightCm": 34,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380159636973",
+    "PickupAddress": {
+      "Latitude": 50.29059426567154,
+      "Longitude": 26.847134449972508
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29120590447827,
+      "Longitude": 26.861012435383717
+    },
+    "PackageDetails": {
+      "WeightKg": 5.18,
+      "WidthCm": 34,
+      "HeightCm": 18,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380791012976",
+    "PickupAddress": {
+      "Latitude": 50.29084590652057,
+      "Longitude": 26.853941494249852
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2995650977609,
+      "Longitude": 26.859208834039478
+    },
+    "PackageDetails": {
+      "WeightKg": 5.16,
+      "WidthCm": 18,
+      "HeightCm": 35,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380597197805",
+    "PickupAddress": {
+      "Latitude": 50.29519519734561,
+      "Longitude": 26.861125620062282
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29649460646976,
+      "Longitude": 26.872089417586526
+    },
+    "PackageDetails": {
+      "WeightKg": 8.27,
+      "WidthCm": 18,
+      "HeightCm": 24,
+      "DepthCm": 44
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380258773706",
+    "PickupAddress": {
+      "Latitude": 50.29768423331065,
+      "Longitude": 26.870586193430647
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29391807959034,
+      "Longitude": 26.863140568357398
+    },
+    "PackageDetails": {
+      "WeightKg": 9.87,
+      "WidthCm": 17,
+      "HeightCm": 10,
+      "DepthCm": 38
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380846837500",
+    "PickupAddress": {
+      "Latitude": 50.29287174056389,
+      "Longitude": 26.856228232327275
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287165845406946,
+      "Longitude": 26.851281269744113
+    },
+    "PackageDetails": {
+      "WeightKg": 2.64,
+      "WidthCm": 29,
+      "HeightCm": 38,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380711041229",
+    "PickupAddress": {
+      "Latitude": 50.29721456799235,
+      "Longitude": 26.869315229787773
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29686616168841,
+      "Longitude": 26.86479266099101
+    },
+    "PackageDetails": {
+      "WeightKg": 5.35,
+      "WidthCm": 39,
+      "HeightCm": 11,
+      "DepthCm": 32
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380678366453",
+    "PickupAddress": {
+      "Latitude": 50.29548236180417,
+      "Longitude": 26.86213070724103
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2988269236739,
+      "Longitude": 26.85836607897188
+    },
+    "PackageDetails": {
+      "WeightKg": 2.36,
+      "WidthCm": 11,
+      "HeightCm": 38,
+      "DepthCm": 46
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380546509151",
+    "PickupAddress": {
+      "Latitude": 50.29167359969578,
+      "Longitude": 26.853660035442186
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292181727816455,
+      "Longitude": 26.861861281988105
+    },
+    "PackageDetails": {
+      "WeightKg": 2.09,
+      "WidthCm": 29,
+      "HeightCm": 39,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380957963635",
+    "PickupAddress": {
+      "Latitude": 50.295253241961674,
+      "Longitude": 26.86660477261617
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29320848680653,
+      "Longitude": 26.866855990863318
+    },
+    "PackageDetails": {
+      "WeightKg": 4.73,
+      "WidthCm": 26,
+      "HeightCm": 18,
+      "DepthCm": 26
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380131551863",
+    "PickupAddress": {
+      "Latitude": 50.298924898244586,
+      "Longitude": 26.85520742638984
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.301375710956435,
+      "Longitude": 26.857609956024728
+    },
+    "PackageDetails": {
+      "WeightKg": 7.69,
+      "WidthCm": 13,
+      "HeightCm": 33,
+      "DepthCm": 39
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380131378319",
+    "PickupAddress": {
+      "Latitude": 50.29327099632244,
+      "Longitude": 26.848538034805873
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29547147334818,
+      "Longitude": 26.851837213453667
+    },
+    "PackageDetails": {
+      "WeightKg": 3.32,
+      "WidthCm": 28,
+      "HeightCm": 39,
+      "DepthCm": 13
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380196558072",
+    "PickupAddress": {
+      "Latitude": 50.29157622916246,
+      "Longitude": 26.8549707394678
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292080919395005,
+      "Longitude": 26.85994199181515
+    },
+    "PackageDetails": {
+      "WeightKg": 3.12,
+      "WidthCm": 23,
+      "HeightCm": 24,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380906908083",
+    "PickupAddress": {
+      "Latitude": 50.29190027740185,
+      "Longitude": 26.852958839611127
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29276600206136,
+      "Longitude": 26.869600523796553
+    },
+    "PackageDetails": {
+      "WeightKg": 7.96,
+      "WidthCm": 14,
+      "HeightCm": 10,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380586339080",
+    "PickupAddress": {
+      "Latitude": 50.28732507617025,
+      "Longitude": 26.85089790625342
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2995803920282,
+      "Longitude": 26.855319018399953
+    },
+    "PackageDetails": {
+      "WeightKg": 2.78,
+      "WidthCm": 30,
+      "HeightCm": 29,
+      "DepthCm": 10
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380431009265",
+    "PickupAddress": {
+      "Latitude": 50.29696799578523,
+      "Longitude": 26.85878745322997
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.294235981858556,
+      "Longitude": 26.849855142370814
+    },
+    "PackageDetails": {
+      "WeightKg": 8.45,
+      "WidthCm": 37,
+      "HeightCm": 12,
+      "DepthCm": 22
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380378438110",
+    "PickupAddress": {
+      "Latitude": 50.28746298749095,
+      "Longitude": 26.85151945846422
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29719552498314,
+      "Longitude": 26.875442369800496
+    },
+    "PackageDetails": {
+      "WeightKg": 3.59,
+      "WidthCm": 30,
+      "HeightCm": 16,
+      "DepthCm": 27
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380176642845",
+    "PickupAddress": {
+      "Latitude": 50.29773970648746,
+      "Longitude": 26.870127399146046
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.30036651904078,
+      "Longitude": 26.860512875901033
+    },
+    "PackageDetails": {
+      "WeightKg": 4.22,
+      "WidthCm": 10,
+      "HeightCm": 13,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380438492296",
+    "PickupAddress": {
+      "Latitude": 50.294433289256595,
+      "Longitude": 26.859458148837795
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29669384670009,
+      "Longitude": 26.87088010801081
+    },
+    "PackageDetails": {
+      "WeightKg": 7.7,
+      "WidthCm": 26,
+      "HeightCm": 32,
+      "DepthCm": 19
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380264586439",
+    "PickupAddress": {
+      "Latitude": 50.29519263101602,
+      "Longitude": 26.85900514005278
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29060643914702,
+      "Longitude": 26.846461823567424
+    },
+    "PackageDetails": {
+      "WeightKg": 9.77,
+      "WidthCm": 30,
+      "HeightCm": 18,
+      "DepthCm": 20
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380751830729",
+    "PickupAddress": {
+      "Latitude": 50.2911120950948,
+      "Longitude": 26.84742564228559
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.291021734348696,
+      "Longitude": 26.858231216748095
+    },
+    "PackageDetails": {
+      "WeightKg": 3.88,
+      "WidthCm": 22,
+      "HeightCm": 12,
+      "DepthCm": 43
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380340939467",
+    "PickupAddress": {
+      "Latitude": 50.292137588796166,
+      "Longitude": 26.865317420375916
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29281604595832,
+      "Longitude": 26.84854403311604
+    },
+    "PackageDetails": {
+      "WeightKg": 5.97,
+      "WidthCm": 38,
+      "HeightCm": 27,
+      "DepthCm": 45
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380392578396",
+    "PickupAddress": {
+      "Latitude": 50.29667659765444,
+      "Longitude": 26.85438126759075
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29640528629221,
+      "Longitude": 26.868143798086326
+    },
+    "PackageDetails": {
+      "WeightKg": 7.56,
+      "WidthCm": 29,
+      "HeightCm": 15,
+      "DepthCm": 22
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380623659034",
+    "PickupAddress": {
+      "Latitude": 50.29031982770517,
+      "Longitude": 26.8488265588225
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28911165927838,
+      "Longitude": 26.862744197398257
+    },
+    "PackageDetails": {
+      "WeightKg": 9.09,
+      "WidthCm": 13,
+      "HeightCm": 36,
+      "DepthCm": 31
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380775106104",
+    "PickupAddress": {
+      "Latitude": 50.29372643858148,
+      "Longitude": 26.87070894107234
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28885867114987,
+      "Longitude": 26.85304085947888
+    },
+    "PackageDetails": {
+      "WeightKg": 3.86,
+      "WidthCm": 38,
+      "HeightCm": 21,
+      "DepthCm": 46
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380563904748",
+    "PickupAddress": {
+      "Latitude": 50.29877966496357,
+      "Longitude": 26.868656811756775
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.297546087276196,
+      "Longitude": 26.87300912730594
+    },
+    "PackageDetails": {
+      "WeightKg": 6.03,
+      "WidthCm": 26,
+      "HeightCm": 26,
+      "DepthCm": 11
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380589188388",
+    "PickupAddress": {
+      "Latitude": 50.29420004786581,
+      "Longitude": 26.85393389170902
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.2902222661499,
+      "Longitude": 26.84663033416482
+    },
+    "PackageDetails": {
+      "WeightKg": 4.06,
+      "WidthCm": 20,
+      "HeightCm": 32,
+      "DepthCm": 42
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380193384526",
+    "PickupAddress": {
+      "Latitude": 50.29363069082009,
+      "Longitude": 26.870792470094255
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29074480873244,
+      "Longitude": 26.85924671485062
+    },
+    "PackageDetails": {
+      "WeightKg": 5.22,
+      "WidthCm": 18,
+      "HeightCm": 39,
+      "DepthCm": 25
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380199439813",
+    "PickupAddress": {
+      "Latitude": 50.29206080695037,
+      "Longitude": 26.868047482625702
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28843711890848,
+      "Longitude": 26.845113021189984
+    },
+    "PackageDetails": {
+      "WeightKg": 8.78,
+      "WidthCm": 19,
+      "HeightCm": 34,
+      "DepthCm": 15
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380379822651",
+    "PickupAddress": {
+      "Latitude": 50.29284417690119,
+      "Longitude": 26.86556954136295
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.292399468578736,
+      "Longitude": 26.862999854109795
+    },
+    "PackageDetails": {
+      "WeightKg": 7.53,
+      "WidthCm": 39,
+      "HeightCm": 19,
+      "DepthCm": 18
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380781990590",
+    "PickupAddress": {
+      "Latitude": 50.2879466199645,
+      "Longitude": 26.84919785801726
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29629427645565,
+      "Longitude": 26.86872831824957
+    },
+    "PackageDetails": {
+      "WeightKg": 5.57,
+      "WidthCm": 27,
+      "HeightCm": 19,
+      "DepthCm": 34
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380433551188",
+    "PickupAddress": {
+      "Latitude": 50.295264502308726,
+      "Longitude": 26.857057321286113
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29274298223053,
+      "Longitude": 26.859127218970666
+    },
+    "PackageDetails": {
+      "WeightKg": 6.99,
+      "WidthCm": 35,
+      "HeightCm": 11,
+      "DepthCm": 34
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380681442546",
+    "PickupAddress": {
+      "Latitude": 50.29712054021675,
+      "Longitude": 26.86417407211729
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29022025338865,
+      "Longitude": 26.84553818987875
+    },
+    "PackageDetails": {
+      "WeightKg": 4.58,
+      "WidthCm": 23,
+      "HeightCm": 12,
+      "DepthCm": 37
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380118108374",
+    "PickupAddress": {
+      "Latitude": 50.28615806481844,
+      "Longitude": 26.8578109162592
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28741126492578,
+      "Longitude": 26.8568570152998
+    },
+    "PackageDetails": {
+      "WeightKg": 6.81,
+      "WidthCm": 27,
+      "HeightCm": 13,
+      "DepthCm": 28
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380819946256",
+    "PickupAddress": {
+      "Latitude": 50.28950064508993,
+      "Longitude": 26.861171451613558
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.296841738282005,
+      "Longitude": 26.856356071940603
+    },
+    "PackageDetails": {
+      "WeightKg": 4.65,
+      "WidthCm": 23,
+      "HeightCm": 34,
+      "DepthCm": 21
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380954041931",
+    "PickupAddress": {
+      "Latitude": 50.28815137399823,
+      "Longitude": 26.851724901481724
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.28738109659875,
+      "Longitude": 26.852745896264768
+    },
+    "PackageDetails": {
+      "WeightKg": 8.19,
+      "WidthCm": 14,
+      "HeightCm": 26,
+      "DepthCm": 16
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380172131594",
+    "PickupAddress": {
+      "Latitude": 50.300865415233865,
+      "Longitude": 26.855908076367925
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.287685510919054,
+      "Longitude": 26.851591567877847
+    },
+    "PackageDetails": {
+      "WeightKg": 3.91,
+      "WidthCm": 20,
+      "HeightCm": 18,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380909946735",
+    "PickupAddress": {
+      "Latitude": 50.29371677593198,
+      "Longitude": 26.847936113036347
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29984629053205,
+      "Longitude": 26.86373591278224
+    },
+    "PackageDetails": {
+      "WeightKg": 8.25,
+      "WidthCm": 25,
+      "HeightCm": 26,
+      "DepthCm": 40
+    }
+  },
+  {
+    "RecipientPhoneNumber": "380664434909",
+    "PickupAddress": {
+      "Latitude": 50.29631299099386,
+      "Longitude": 26.871252491252676
+    },
+    "DeliveryAddress": {
+      "Latitude": 50.29943161047328,
+      "Longitude": 26.86641217086238
+    },
+    "PackageDetails": {
+      "WeightKg": 6.45,
+      "WidthCm": 39,
+      "HeightCm": 12,
+      "DepthCm": 48
+    }
+  }
+]

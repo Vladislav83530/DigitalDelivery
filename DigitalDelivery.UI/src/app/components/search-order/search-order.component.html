@@ -1,0 +1,27 @@
+<!-- <div class="graph-container" *ngIf="routehData">
+    <app-map [graphData]="routehData" [mapHeight]="'1000px'"></app-map>
+</div> -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-5">
+            <div class="panel border bg-white">
+                <div class="panel-heading">
+                    <h3 class="pt-3 font-weight-bold">Search order</h3>
+                </div>
+                <div class="panel-body p-3">
+                    <form [formGroup]="searchOrderForm" class="text-center">
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="showInputValidation('orderNumber')">
+                                <span class="fa fa-archive p-2"></span>
+                                <input formControlName="orderNumber" type="number" placeholder="Order number" min="0">
+                            </div>
+                        </div>
+                        <small *ngIf="showInputValidation('orderNumber')" class="text-danger">*Order number is required</small>
+                        <button (click)="onSearchOrder()" type="submit" class="btn btn-primary btn-block mt-4 w-100">Search</button>
+                        <img width="175px" src="/assets/images/box.png" class="m-4">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

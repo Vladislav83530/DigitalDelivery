@@ -1,15 +1,17 @@
-import { Component, inject, OnInit, PLATFORM_ID, forwardRef, Output, EventEmitter } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, inject, OnInit, PLATFORM_ID, forwardRef, Output, EventEmitter, Input, SimpleChanges } from '@angular/core';
+import { CommonModule, isPlatformBrowser, NgIf } from '@angular/common';
 import { Address } from '../../models/create-order/address.model';
 import { FormsModule, ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MapStage } from '../../models/map/map-stage.model';
 import { SearchResult } from '../../models/map/search-result.model';
 import { MapMarkers } from '../../models/map/map-markers.model';
+import { GraphData } from '../../models/map/graph-data.model';
+import { GraphNode } from '../../models/map/graph-node.model';
 
 @Component({
     selector: 'app-map',
     standalone: true,
-    imports: [CommonModule, FormsModule],
+    imports: [CommonModule, NgIf, FormsModule],
     templateUrl: './map.component.html',
     styleUrl: './map.component.css',
     providers: [
@@ -21,13 +23,21 @@ import { MapMarkers } from '../../models/map/map-markers.model';
     ]
 })
 export class MapComponent implements OnInit, ControlValueAccessor {
+    @Input() enableMapSearch: boolean = false;
+    @Input() graphData: GraphData | null = null;
+    @Input() terminalNodes: GraphNode[] | null = null;
+    @Input() mapHeight: string = '500px';
+    @Input() showAllNode: boolean = false;
+    @Input() robotLocation: Address | null = null;
     @Output() addressesChange = new EventEmitter<any>();
     
     private map: any;
     private platformId = inject(PLATFORM_ID);
-    private markers: MapMarkers = { pickup: null, delivery: null };
+    private markers: MapMarkers = { pickup: null, delivery: null, robot: null };
     private polygon: any;
     private polygonBounds: any;
+    private graphLayer: any;
+    private markersLayer: any;
     private onChange: any = () => {};
     private onTouched: any = () => {};
 
@@ -61,8 +71,37 @@ export class MapComponent implements OnInit, ControlValueAccessor {
     };
 
     public async ngOnInit(): Promise<void> {
+        console.log('Map component initializing...');
         if (isPlatformBrowser(this.platformId)) {
             await this.configMap();
+            console.log('Map configured');
+
+            if (this.graphData) {
+                this.drawGraph(this.showAllNode);
+                console.log('Graph drawn');
+            }
+
+            if (!this.showAllNode && this.terminalNodes) {
+                this.terminalNodes.forEach(node => {
+                    const L = (window as any).L;
+
+                    L.circleMarker([node.latitude, node.longitude], {
+                        radius: 6,
+                        fillColor: '#4285f4',
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(this.graphLayer);
+                });
+                console.log('Terminal nodes added');
+            }
+
+            // If we have robot location, add it to the map
+            if (this.robotLocation) {
+                console.log('Initial robot location available:', this.robotLocation);
+                this.updateRobotMarker();
+            }
         }
     }
 
@@ -120,6 +159,9 @@ export class MapComponent implements OnInit, ControlValueAccessor {
             fillColor: '#4285f4',
             fillOpacity: 0.1
         }).addTo(this.map);
+
+        // Initialize markers layer
+        this.markersLayer = L.layerGroup().addTo(this.map);
 
         this.map.on('click', (e: any) => {
             this.handleMapClick(e.latlng);
@@ -232,12 +274,12 @@ export class MapComponent implements OnInit, ControlValueAccessor {
         const L = (window as any).L;
         
         if (this.markers.pickup) {
-            this.map.removeLayer(this.markers.pickup);
+            this.markersLayer.removeLayer(this.markers.pickup);
         }
         
         this.markers.pickup = L.marker(point, {
             icon: this.createCheckpointIcon('#4285f4')
-        }).addTo(this.map);
+        }).addTo(this.markersLayer);
 
         this.pickupCoordinates = { 
             latitude: parseFloat(result.lat), 
@@ -251,12 +293,12 @@ export class MapComponent implements OnInit, ControlValueAccessor {
         const L = (window as any).L;
         
         if (this.markers.delivery) {
-            this.map.removeLayer(this.markers.delivery);
+            this.markersLayer.removeLayer(this.markers.delivery);
         }
         
         this.markers.delivery = L.marker(point, {
             icon: this.createCheckpointIcon('#ea4335')
-        }).addTo(this.map);
+        }).addTo(this.markersLayer);
 
         this.deliveryCoordinates = { 
             latitude: parseFloat(result.lat), 
@@ -295,24 +337,24 @@ export class MapComponent implements OnInit, ControlValueAccessor {
 
         if (this.currentStage === 'pickup') {
             if (this.markers.pickup) {
-                this.map.removeLayer(this.markers.pickup);
+                this.markersLayer.removeLayer(this.markers.pickup);
             }
             
             this.markers.pickup = (window as any).L.marker(point, {
                 icon: this.createCheckpointIcon('#4285f4')
-            }).addTo(this.map);
+            }).addTo(this.markersLayer);
 
             this.pickupCoordinates = { latitude: point.lat, longitude: point.lng };
             this.pickupAddress = await this.getAddressFromCoordinates(point.lat, point.lng);
         } 
         else if (this.currentStage === 'delivery') {
             if (this.markers.delivery) {
-                this.map.removeLayer(this.markers.delivery);
+                this.markersLayer.removeLayer(this.markers.delivery);
             }
             
             this.markers.delivery = (window as any).L.marker(point, {
                 icon: this.createCheckpointIcon('#ea4335')
-            }).addTo(this.map);
+            }).addTo(this.markersLayer);
 
             this.deliveryCoordinates = { latitude: point.lat, longitude: point.lng };
             this.deliveryAddress = await this.getAddressFromCoordinates(point.lat, point.lng);
@@ -349,14 +391,18 @@ export class MapComponent implements OnInit, ControlValueAccessor {
         }
 
         if (this.markers.pickup) {
-            this.map.removeLayer(this.markers.pickup);
+            this.markersLayer.removeLayer(this.markers.pickup);
         }
         
         if (this.markers.delivery) {
-            this.map.removeLayer(this.markers.delivery);
+            this.markersLayer.removeLayer(this.markers.delivery);
         }
 
-        this.markers = { pickup: null, delivery: null };
+        if (this.markers.robot) {
+            this.markersLayer.removeLayer(this.markers.robot);
+        }
+
+        this.markers = { pickup: null, delivery: null, robot: null };
         this.pickupCoordinates = null; 
         this.deliveryCoordinates = null;
         this.pickupAddress = '';
@@ -365,6 +411,117 @@ export class MapComponent implements OnInit, ControlValueAccessor {
         this.currentStage = 'pickup';
 
         this.updateValue();
+    }
+
+    private drawGraph(showNode: boolean): void {
+        if (!this.graphData) {
+            return;
+        }
+        
+        const L = (window as any).L;
+        
+        if (this.graphLayer) {
+            this.map.removeLayer(this.graphLayer);
+        }
+
+        this.graphLayer = L.layerGroup().addTo(this.map);
+
+        const nodeMap = new Map<number, GraphNode>();
+        this.graphData.nodes.forEach(node => {
+            nodeMap.set(node.id, node);
+        });
+
+        this.graphData.edges.forEach(edge => {
+            const fromNode = nodeMap.get(edge.fromNodeId);
+            const toNode = nodeMap.get(edge.toNodeId);
+
+            if (fromNode && toNode) {
+                const fromLatLng = L.latLng(fromNode.latitude, fromNode.longitude);
+                const toLatLng = L.latLng(toNode.latitude, toNode.longitude);
+
+                L.polyline([fromLatLng, toLatLng], {
+                    color: '#666',
+                    weight: 2,
+                    opacity: 0.8
+                }).addTo(this.graphLayer);
+            }
+        });
+
+        if (showNode) {
+            this.graphData.nodes.forEach(node => {
+                L.circleMarker([node.latitude, node.longitude], {
+                    radius: 6,
+                    fillColor: '#4285f4',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(this.graphLayer);
+            });
+        }
+    }
+
+    ngOnChanges(changes: SimpleChanges): void {
+        console.log('Map changes detected:', changes);
+        if (changes['robotLocation'] && this.map) {
+            console.log('Robot location changed:', this.robotLocation);
+            this.updateRobotMarker();
+        }
+    }
+
+    private updateRobotMarker(): void {
+        console.log('Updating robot marker...');
+        if (!this.robotLocation) {
+            console.log('No robot location available');
+            if (this.markers.robot) {
+                this.markersLayer.removeLayer(this.markers.robot);
+                this.markers.robot = null;
+            }
+            return;
+        }
+
+        const L = (window as any).L;
+        
+        // Remove existing robot marker if it exists
+        if (this.markers.robot) {
+            console.log('Removing existing robot marker');
+            this.markersLayer.removeLayer(this.markers.robot);
+        }
+
+        console.log('Creating new robot marker at:', this.robotLocation);
+        // Create new robot marker
+        this.markers.robot = L.marker([this.robotLocation.latitude, this.robotLocation.longitude], {
+            icon: L.divIcon({
+                className: 'custom-div-icon',
+                html: `
+                    <div style="
+                        width: 24px;
+                        height: 24px;
+                        background-color: white;
+                        border: 2px solid #34a853;
+                        border-radius: 50%;
+                        position: relative;
+                    ">
+                        <div style="
+                            width: 12px;
+                            height: 12px;
+                            background-color: #34a853;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        "></div>
+                    </div>
+                `,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12]
+            })
+        }).addTo(this.markersLayer);
+
+        // Add popup with last update time
+        this.markers.robot.bindPopup(`Robot Location<br>Last updated: ${new Date().toLocaleTimeString()}`);
+        console.log('Robot marker created and added to map');
     }
 }
 

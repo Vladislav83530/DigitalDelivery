@@ -1,1 +1,152 @@
-<h1>User Profile</h1>
+<div class="min-vh-100 d-flex align-items-center">
+    <div class="container-fluid px-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+                <div class="panel border bg-white">
+                    <div class="panel-heading d-flex justify-content-between align-items-center">
+                        <h3 class="pt-3 font-weight-bold">User Profile</h3>
+                    </div>
+                    
+                    <div class="panel-body p-3">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <!-- User Information -->
+                                <div class="info-block">
+                                    <div class="block-header">
+                                        <i class="fa fa-user"></i>
+                                        <span>Personal Information</span>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="input-field" *ngIf="!isLoadingProfile">
+                                            <span class="fa fa-user p-2"></span>
+                                            <span>{{ userProfile.fullName }}</span>
+                                        </div>
+                                        <div class="input-field" *ngIf="!isLoadingProfile">
+                                            <span class="fa fa-envelope p-2"></span>
+                                            <span>{{ userProfile.email }}</span>
+                                        </div>
+                                        <div class="input-field" *ngIf="!isLoadingProfile">
+                                            <span class="fa fa-phone p-2"></span>
+                                            <span>{{ userProfile.phoneNumber | phoneFormat }}</span>
+                                        </div>
+                                        <div *ngIf="isLoadingProfile" class="text-center">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <!-- Order History -->
+                                <div class="info-block">
+                                    <div class="block-header">
+                                        <i class="fa fa-history"></i>
+                                        <span>Order History</span>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Order #</th>
+                                                        <th>Status</th>
+                                                        <th>Created</th>
+                                                        <th>Delivered</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngIf="isLoadingOrders">
+                                                        <td colspan="5" class="text-center">
+                                                            <div class="spinner-border text-primary" role="status">
+                                                                <span class="visually-hidden">Loading...</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr *ngFor="let order of orderHistory">
+                                                        <td>{{ order.orderNumber }}</td>
+                                                        <td>
+                                                            <span class="badge" [ngClass]="{
+                                                                'status-pending': order.status === OrderStatusEnum.Pending,
+                                                                'status-processing': order.status === OrderStatusEnum.Processing,
+                                                                'status-processed': order.status === OrderStatusEnum.Processed,
+                                                                'status-move-pickup': order.status === OrderStatusEnum.MoveToPickupPoint,
+                                                                'status-move-delivery': order.status === OrderStatusEnum.MoveToDeliveryPoint,
+                                                                'status-delivered': order.status === OrderStatusEnum.Delivered,
+                                                                'status-cancelled': order.status === OrderStatusEnum.Cancelled
+                                                            }">
+                                                                {{ getStatusDisplayName(order.status) }}
+                                                            </span>
+                                                        </td>
+                                                        <td>{{ order.createdAt | date:'medium' }}</td>
+                                                        <td>{{ order.deliveredAt ? (order.deliveredAt | date:'medium') : '-' }}</td>
+                                                        <td>
+                                                            <button class="btn btn-outline-primary btn-sm" 
+                                                                    (click)="navigateToOrder(order.orderNumber)">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        <!-- Pagination -->
+                                        <nav *ngIf="totalPages > 1" aria-label="Order history pagination">
+                                            <ul class="pagination justify-content-center mt-3">
+                                                <li class="page-item" [class.disabled]="currentPage === 1">
+                                                    <a class="page-link" (click)="onPageChange(currentPage - 1)" href="javascript:void(0)">Previous</a>
+                                                </li>
+                                                
+                                                <!-- First page -->
+                                                <li class="page-item" [class.active]="currentPage === 1">
+                                                    <a class="page-link" (click)="onPageChange(1)" href="javascript:void(0)">1</a>
+                                                </li>
+
+                                                <!-- Second page -->
+                                                <li class="page-item" [class.active]="currentPage === 2" *ngIf="totalPages >= 2">
+                                                    <a class="page-link" (click)="onPageChange(2)" href="javascript:void(0)">2</a>
+                                                </li>
+
+                                                <!-- Ellipsis if needed -->
+                                                <li class="page-item disabled" *ngIf="currentPage > 3">
+                                                    <span class="page-link">...</span>
+                                                </li>
+
+                                                <!-- Current page if it's not first, second, or last -->
+                                                <li class="page-item active" *ngIf="currentPage > 2 && currentPage < totalPages - 1">
+                                                    <a class="page-link" href="javascript:void(0)">{{ currentPage }}</a>
+                                                </li>
+
+                                                <!-- Ellipsis if needed -->
+                                                <li class="page-item disabled" *ngIf="currentPage < totalPages - 2 && totalPages > 4">
+                                                    <span class="page-link">...</span>
+                                                </li>
+
+                                                <!-- Second to last page -->
+                                                <li class="page-item" [class.active]="currentPage === totalPages - 1" *ngIf="totalPages > 3">
+                                                    <a class="page-link" (click)="onPageChange(totalPages - 1)" href="javascript:void(0)">{{ totalPages - 1 }}</a>
+                                                </li>
+
+                                                <!-- Last page -->
+                                                <li class="page-item" [class.active]="currentPage === totalPages" *ngIf="totalPages > 2">
+                                                    <a class="page-link" (click)="onPageChange(totalPages)" href="javascript:void(0)">{{ totalPages }}</a>
+                                                </li>
+
+                                                <li class="page-item" [class.disabled]="currentPage === totalPages">
+                                                    <a class="page-link" (click)="onPageChange(currentPage + 1)" href="javascript:void(0)">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

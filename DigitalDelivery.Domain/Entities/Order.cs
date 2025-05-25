@@ -8,7 +8,7 @@ namespace DigitalDelivery.Domain.Entities
     {
         [Key]
         [Column("id")]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [ForeignKey("User")]
         [Column("sender_id")]
@@ -28,12 +28,8 @@ namespace DigitalDelivery.Domain.Entities
         [ForeignKey("Address")]
         [Column("delivery_address_id")]
         public int DeliveryAddressId { get; set; }
-        public Address DeliveryAddress { get; set; }
 
-        [ForeignKey("OrderStatus")]
-        [Column("status_id")]
-        public int StatusId { get; set; }
-        public OrderStatus Status { get; set; }
+        public Address DeliveryAddress { get; set; }
 
         [Column("created_at")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -41,7 +37,7 @@ namespace DigitalDelivery.Domain.Entities
         [Column("estimated_delivery")]
         public DateTime? EstimatedDelivery { get; set; }
 
-        [Column("complete_at")]
+        [Column("completed_at")]
         public DateTime CompletedAt { get; set; }
 
         [Column("cost")]
@@ -49,6 +45,10 @@ namespace DigitalDelivery.Domain.Entities
 
         public PackageDetails PackageDetails { get; set; }
 
-        public ICollection<RobotAssignment> RobotAssignments { get; set; }
+        public RobotAssignment RobotAssignments { get; set; }
+
+        public ICollection<Route> Routes { get; set; }
+
+        public ICollection<OrderStatus> OrderStatuses { get; set; }
     }
 }
