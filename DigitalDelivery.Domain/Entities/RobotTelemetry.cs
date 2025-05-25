@@ -25,7 +25,7 @@ namespace DigitalDelivery.Domain.Entities
         [Column("battery_level")]
         public double BatteryLevel { get; set; }
 
-        [Column("speed_khp")]
+        [Column("speed_kph")]
         public double SpeedKhp { get; set; }
 
         [Column("last_update")]

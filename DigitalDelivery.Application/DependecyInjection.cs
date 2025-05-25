@@ -14,6 +14,11 @@ namespace DigitalDelivery.Application
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRobotService, RobotService>();
             services.AddScoped<IDistanceCalculationService, DistanceCalculationService>();
+            services.AddScoped<IMapParser, OsmMapParser>();
+            services.AddScoped<IMapService, MapService>();
+            services.AddScoped<IRouteService, RouteService>();
+            services.AddScoped<IAStarPathFinder, AStarPathFinder>();
+            services.AddSingleton<ISimulatedClock, SimulatedClock>();
 
             services.AddSingleton<IRobotSelectionStrategy, RandomRobotSelectionStrategy>();
             //services.AddSingleton<EtaOptimizedStrategy>();

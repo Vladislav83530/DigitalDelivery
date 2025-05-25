@@ -30,5 +30,15 @@ namespace DigitalDelivery.Application.Services
             var clearPhoneNumber = Helper.CleanPhoneNumber(phoneNumber);
             return _context.Users.FirstOrDefault(u => u.PhoneNumber == clearPhoneNumber);
         }
+
+        public User GetRandomUser()
+        {
+            var users = _context.Users.ToList();
+            if (!users.Any())
+                throw new InvalidOperationException("Користувачі не знайдені.");
+
+            int index = Random.Shared.Next(users.Count);
+            return users[index];
+        }
     }
 }

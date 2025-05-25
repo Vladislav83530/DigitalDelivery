@@ -15,7 +15,7 @@ namespace DigitalDelivery.Application.Services.RobotSelectionStrategies
 
         public IRobotSelectionStrategy GetStrategy(Order order)
         {
-            return _serviceProvider.GetRequiredService<RandomRobotSelectionStrategy>();
+            return _serviceProvider.GetRequiredService<IRobotSelectionStrategy>();
         }
     }
 }

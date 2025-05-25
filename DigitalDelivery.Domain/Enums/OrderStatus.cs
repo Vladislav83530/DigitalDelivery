@@ -4,9 +4,9 @@
     {
         Pending,
         Processing,
-        InProgress,
-        PendingRobot,
-        Shipped,
+        Processed,
+        MoveToPickupPoint,
+        MoveToDeliveryPoint,
         Delivered,
         Cancelled
     }

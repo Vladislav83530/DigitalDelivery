@@ -30,6 +30,19 @@
                             </div>
                             <small *ngIf="showInputValidation('email')" class="text-danger">*Email is required</small>
                             <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="showInputValidation('phoneNumber')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input 
+                                        formControlName="phoneNumber" 
+                                        type="tel" 
+                                        (input)="onPhoneInput()"
+                                        pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}"
+                                        placeholder="Phone number"
+                                    >
+                                </div>
+                            </div>
+                            <small *ngIf="showInputValidation('phoneNumber')" class="text-danger">*Phone number is required</small>
+                            <div class="form-group pt-3">
                                 <div class="input-field" [class.error]="showInputValidation('password')">
                                     <span class="fa fa-lock p-2"></span>
                                     <input formControlName="password" [type]="passwordInputType" placeholder="Password">

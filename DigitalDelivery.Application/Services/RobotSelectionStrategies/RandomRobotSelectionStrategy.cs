@@ -1,4 +1,5 @@
-﻿using DigitalDelivery.Application.Interfaces;
+﻿using DigitalDelivery.Application.Helpers;
+using DigitalDelivery.Application.Interfaces;
 using DigitalDelivery.Domain.Entities;
 
 namespace DigitalDelivery.Application.Services.RobotSelectionStrategies
@@ -15,6 +16,12 @@ namespace DigitalDelivery.Application.Services.RobotSelectionStrategies
             }
 
             var availableRobots = robots.Where(r => r.Telemetry.BatteryLevel >= minBateryLvl).ToList();
+            availableRobots = availableRobots.Where(r => DeliveryHelper.CanFitPackage(order.PackageDetails, r)).ToList();
+
+            if (availableRobots.Count == 0)
+            {
+                return null;
+            }
 
             Random random = new Random();
             int randomIndex = random.Next(availableRobots.Count);

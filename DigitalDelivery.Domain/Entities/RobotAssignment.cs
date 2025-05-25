@@ -17,10 +17,13 @@ namespace DigitalDelivery.Domain.Entities
 
         [ForeignKey("Order")]
         [Column("order_id")]
-        public Guid OrderId { get; set; }
+        public int OrderId { get; set; }
         public Order Order { get; set; }
 
         [Column("assignment_at")]
         public DateTime AssignmentAt { get; set; }
+
+        [Column("waiting_time")]
+        public int WaitingTime { get; set; }
     }
 }

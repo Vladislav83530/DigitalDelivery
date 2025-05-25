@@ -5,6 +5,7 @@ import { NgIf } from '@angular/common';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { NgToastModule, NgToastService } from 'ng-angular-popup';
+import { formatUAPhoneNumber } from '../../utils/phone-utils';
 
 @Component({
   selector: 'app-signup',
@@ -29,7 +30,8 @@ export class SignupComponent {
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             email: ['', Validators.required],
-            password: ['', Validators.required]
+            password: ['', Validators.required],
+            phoneNumber: ['', Validators.required]
         });
     }
 
@@ -65,5 +67,11 @@ export class SignupComponent {
     
     showInputValidation(fieldName: string) {
         return this.signupForm.controls[fieldName].dirty && this.signupForm.hasError('required', fieldName)
+    }
+
+    onPhoneInput(): void {
+        const control = this.signupForm.controls['phoneNumber'];
+        const formatted = formatUAPhoneNumber(control.value);
+        control.setValue(formatted, { emitEvent: false });
     }
 }

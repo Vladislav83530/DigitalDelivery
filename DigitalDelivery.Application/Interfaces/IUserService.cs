@@ -6,5 +6,6 @@ namespace DigitalDelivery.Application.Interfaces
     {
         User GetCurrentUser();
         User GetUserByPhoneNumber(string phoneNumber);
+        User GetRandomUser();
     }
 }
