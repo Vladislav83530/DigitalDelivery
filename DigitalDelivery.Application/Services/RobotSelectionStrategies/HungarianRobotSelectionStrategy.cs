@@ -5,7 +5,7 @@ using DigitalDelivery.Application.Interfaces;
 using DigitalDelivery.Application.Models.Map;
 using DigitalDelivery.Domain.Entities;
 
-public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
+public class HungarianRobotSelectionStrategy : IRobotSelectionStrategy
 {
     private readonly IDistanceCalculationService _distanceCalculationService;
 
@@ -14,7 +14,7 @@ public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
         _distanceCalculationService = distanceCalculationService;
     }
 
-    public Robot SelectBestRobot(IEnumerable<Robot> robots, Order order)
+    public Robot SelectBestRobot(IQueryable<Robot> robots, Order order)
     {
         throw new NotImplementedException("This method is not used in this strategy.");
     }
@@ -31,7 +31,6 @@ public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
 
         double[,] costMatrix = new double[numRobots, numOrders];
 
-        // Створення матриці вартості
         for (int i = 0; i < numRobots; i++)
         {
             for (int j = 0; j < numOrders; j++)
@@ -40,10 +39,8 @@ public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
             }
         }
 
-        // Застосування Угорського алгоритму
         int[] assignments = HungarianAlgorithm.Solve(costMatrix);
 
-        // Формування призначення замовлень для роботів
         var robotOrderAssignments = new Dictionary<Robot, Order>();
         for (int i = 0; i < assignments.Length; i++)
         {
@@ -58,7 +55,6 @@ public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
 
     private double CalculateCost(Robot robot, Order order)
     {
-        // Розрахунок вартості (час доставки) з урахуванням пріоритету замовлень та заряду батареї
         (double minDistance, double minDistanceWithCharging) = _distanceCalculationService.SimpleCalculationDistance(
             new GeoCoordinate(robot.Telemetry.Latitude, robot.Telemetry.Longitude),
             new GeoCoordinate(order.PickupAddress.Latitude, order.PickupAddress.Longitude),
@@ -66,14 +62,11 @@ public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
 
         double time = minDistance / robot.Specification.MaxSpeedKph;
 
-        // Перевірка, чи вистачить заряду батареї
         if (!HasEnoughBattery(robot, minDistanceWithCharging))
         {
-            // Якщо заряду не вистачає, повертаємо максимальне значення, щоб уникнути призначення
             return double.MaxValue;
         }
 
-        // Додавання пріоритету (наприклад, час очікування)
         time += (DateTime.UtcNow - order.CreatedAt).TotalMinutes / 10.0;
 
         return time;
@@ -81,13 +74,9 @@ public class HungarianRobotSelectionStrategy //: IRobotSelectionStrategy
 
     private bool HasEnoughBattery(Robot robot, double distance)
     {
-        // Розрахунок необхідного заряду батареї
         double neededBattery = distance * robot.Specification.EnergyConsumptionPerM;
-
-        // Розрахунок поточного доступного заряду батареї
         double currentBattery = robot.Specification.BatteryCapacityAh * robot.Telemetry.BatteryLevel / 100.0;
 
-        // Перевірка, чи вистачає заряду
         return currentBattery >= neededBattery;
     }
 }
@@ -109,7 +98,6 @@ public static class HungarianAlgorithm
         int[] colCover = new int[n];
         int zeroRowCount = 0;
 
-        // Step 1: Subtract row minimums
         for (int i = 0; i < n; i++)
         {
             double minVal = double.MaxValue;
@@ -126,7 +114,6 @@ public static class HungarianAlgorithm
             }
         }
 
-        // Step 2: Subtract column minimums
         for (int j = 0; j < n; j++)
         {
             double minVal = double.MaxValue;
@@ -143,7 +130,6 @@ public static class HungarianAlgorithm
             }
         }
 
-        // Step 3: Cover zeros
         while (true)
         {
             zeroRowCount = CoverZeros(costMatrix, rowCover, colCover);
@@ -153,8 +139,6 @@ public static class HungarianAlgorithm
             }
             AdjustMatrix(costMatrix, rowCover, colCover);
         }
-
-        // Step 4: Find assignments
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)

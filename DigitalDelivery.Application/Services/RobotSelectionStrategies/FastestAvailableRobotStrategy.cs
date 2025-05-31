@@ -1,12 +1,12 @@
 ﻿using DigitalDelivery.Application.Interfaces;
-using DigitalDelivery.Application.Models.Map;
 using DigitalDelivery.Application.Settings;
 using DigitalDelivery.Domain.Entities;
 using Microsoft.Extensions.Options;
+using GeoCoordinate = DigitalDelivery.Application.Models.Map.GeoCoordinate;
 
 namespace DigitalDelivery.Application.Services.RobotSelectionStrategies
 {
-    public class FastestAvailableRobotStrategy //: IRobotSelectionStrategy
+    public class FastestAvailableRobotStrategy : IRobotSelectionStrategy
     {
         private readonly IDistanceCalculationService _distanceCalculationService;
         private readonly BaseDeliverySettings _baseDeliverySettings;
@@ -19,7 +19,7 @@ namespace DigitalDelivery.Application.Services.RobotSelectionStrategies
             _baseDeliverySettings = baseDeliverySettings.Value;
         }
 
-        public Robot SelectBestRobot(IEnumerable<Robot> robots, Order order)
+        public Robot SelectBestRobot(IQueryable<Robot> robots, Order order)
         {
             var deliveryEstimates = new Dictionary<Robot, double>();
 
@@ -28,13 +28,34 @@ namespace DigitalDelivery.Application.Services.RobotSelectionStrategies
                 (double minDistance, double minDistanceWithCharging) = GetMinDistance(robot, order);
 
                 if (!HasEnoughtBattery(minDistanceWithCharging, robot))
-                {
                     continue;
+
+                double baseDeliveryTime = EstimateDeliveryTime(minDistance, robot);
+                double totalEstimatedTime;
+
+                if (robot.Telemetry.Status == Domain.Enums.RobotStatus.Available)
+                {
+                    totalEstimatedTime = baseDeliveryTime;
+                }
+                else
+                {
+                    var nextAssignment = robot.Assignments
+                        .Where(a => a.Order?.EstimatedDelivery != null)
+                        .OrderByDescending(a => a.Order.EstimatedDelivery)
+                        .FirstOrDefault();
+
+                    if (nextAssignment?.Order?.EstimatedDelivery == null)
+                        continue;
+
+                    var secondsUntilFree = (nextAssignment.Order.EstimatedDelivery.Value - DateTime.UtcNow).TotalSeconds;
+                    if (secondsUntilFree < 0)
+                        secondsUntilFree = 0;
+
+                    double hoursUntilFree = secondsUntilFree / 3600.0;
+                    totalEstimatedTime = hoursUntilFree + baseDeliveryTime;
                 }
 
-                var deliveryTime = EstimateDeliveryTime(minDistance, robot);
-
-                deliveryEstimates.Add(robot, deliveryTime);
+                deliveryEstimates[robot] = totalEstimatedTime;
             }
 
             return deliveryEstimates.OrderBy(r => r.Value).FirstOrDefault().Key;
