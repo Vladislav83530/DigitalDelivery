@@ -1,0 +1,68 @@
+<section class="logo-section">
+    <div class="logo-content">
+        <div class="logo-text">Digital Delivery</div>
+        <div class="about-us-container">
+            <p class="about-us">Let's go!</p>
+            <i class="bi bi-arrow-down-circle arrow-down "></i>
+        </div>
+    </div>
+</section>
+
+<div class="container-wider mt-3">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="portfolio-item" [routerLink]="'/search-order'">
+                <img src="/assets/images/order-tracking.png" class="m-3">
+                <span>Track order</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="portfolio-item" [routerLink]="'/create-order'">
+                <img src="/assets/images/booking.png" class="m-3">
+                <span>Create order</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row m-1 mt-0">
+                <div class="portfolio-item-half" *ngIf="!isLoggedIn" [routerLink]="'/login'">
+                    <img width="48px" src="/assets/images/enter.png" class="m-3">
+                    <span>Log in</span>
+                </div>
+            </div>
+            <div class="row m-1 mt-2 mb-0">
+                <div class="portfolio-item-half" *ngIf="!isLoggedIn" [routerLink]="'/signup'">
+                    <img width="48px" src="/assets/images/add-user.png" class="m-3">
+                    <span>Sign up</span>
+                </div>
+                <div class="portfolio-item" *ngIf="isLoggedIn" (click)="logout()">
+                    <img width="48px" src="/assets/images/enter.png" class="m-3">
+                    <span>Logout</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="portfolio-item" [routerLink]="'/faq'">
+                <img src="/assets/images/faq.png" class="m-3">
+                <span>FAQ</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="portfolio-item" [routerLink]="'/account'">
+                <img src="/assets/images/profile-user.png" class="m-3">
+                <span>Account</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="portfolio-item">
+                <img src="/assets/images/active.png" class="m-3">
+                <span>Notifications</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid contacts-footer">
+    <div class="container-wider footer">
+    </div>
+</footer>

@@ -1,0 +1,127 @@
+.category-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn-group {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: white;
+}
+
+.btn-outline-primary {
+    color: #2c3e50;
+    border-color: #2c3e50;
+    background-color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.faq-item .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.faq-item .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.faq-item .card-header {
+    background-color: white;
+    border-bottom: none;
+    cursor: pointer;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+}
+
+.faq-item .card-header.active {
+    background-color: #f8f9fa;
+}
+
+.faq-item .card-body {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.toggle-icon {
+    color: #2c3e50;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.faq-item .card-header:hover .toggle-icon {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h5 {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+p {
+    color: #34495e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.8rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .faq-item .card-header {
+        padding: 1rem;
+    }
+
+    .faq-item .card-body {
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
+} 

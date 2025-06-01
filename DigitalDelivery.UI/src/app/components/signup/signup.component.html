@@ -1,0 +1,64 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Sign up</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form [formGroup]="signupForm">
+                            <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="showInputValidation('firstName')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="firstName" type="text" placeholder="First name">
+                                </div>
+                            </div>
+                            <small *ngIf="showInputValidation('firstName')" class="text-danger">*First name is required</small>
+                            <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="showInputValidation('lastName')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="lastName" type="text" placeholder="Last name">
+                                </div>
+                            </div>
+                            <small *ngIf="showInputValidation('lastName')" class="text-danger">*Last name is required</small>
+                            <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="showInputValidation('email')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="email" type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <small *ngIf="showInputValidation('email')" class="text-danger">*Email is required</small>
+                            <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="showInputValidation('phoneNumber')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input 
+                                        formControlName="phoneNumber" 
+                                        type="tel" 
+                                        (input)="onPhoneInput()"
+                                        pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}"
+                                        placeholder="Phone number"
+                                    >
+                                </div>
+                            </div>
+                            <small *ngIf="showInputValidation('phoneNumber')" class="text-danger">*Phone number is required</small>
+                            <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="showInputValidation('password')">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input formControlName="password" [type]="passwordInputType" placeholder="Password">
+                                    <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                                </div>
+                            </div>
+                            <small *ngIf="showInputValidation('password')" class="text-danger">*Password is required</small>
+                            <button (click)="onSignup()" type="submit" class="btn btn-primary btn-block mt-4 w-100">Sign up</button>
+                            <div class="text-center pt-4 text-muted">
+                                Already have account?
+                                <a id="signup" href="/login">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
